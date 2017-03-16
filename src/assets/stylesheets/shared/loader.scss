@@ -1,0 +1,27 @@
+/* Imports */
+
+@import "../libs/bourbon/bourbon";
+@import "variables";
+
+/* Loader */
+
+#loader{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  border: rem(16) solid $main-color;
+  border-top: rem(16) solid $brand-color;
+  border-radius: 50%;
+  width: rem(120);
+  height: rem(120);
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
