@@ -5,7 +5,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 
 ## Demo
 
-Visit --> https://angular-starter-app.herokuapp.com/
+https://angular-starter-app.herokuapp.com/
 
 ## Prerequisites
 
@@ -15,14 +15,14 @@ Visit --> https://angular-starter-app.herokuapp.com/
 
 ## Main Libraries
 
-* Angular 2 --> https://angular.io/docs/ts/latest/,
-* Angular-cli --> https://github.com/angular/angular-cli,
-* Node.js --> https://www.ruby-lang.org/en/documentation/,
-* Express.js --> http://guides.rubyonrails.org/getting_started.html,
-* Bulma --> http://bulma.io/documentation/overview/start/,
-* Sass --> http://sass-lang.com/documentation/file.SASS_REFERENCE.html,
-* Bourbon --> http://bourbon.io/docs/,
-* Animate.css --> https://github.com/daneden/animate.css.
+* [Angular 2](https://angular.io/),
+* [Angular-cli](https://github.com/angular/angular-cli),
+* [Node.js](https://nodejs.org/en/),
+* [Express.js](http://expressjs.com),
+* [Bulma](http://bulma.io/),
+* [Sass](http://sass-lang.com/),
+* [Bourbon](http://bourbon.io/),
+* [Animate.css](https://github.com/daneden/animate.css).
 
 ## Project Setup and start
 
