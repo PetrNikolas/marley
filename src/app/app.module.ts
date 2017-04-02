@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { Ng2PageTransitionModule } from "ng2-page-transition";
+
 import { routing } from './app.routes';
 
 import { AppComponent } from './components/app.component';
@@ -23,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    Ng2PageTransitionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
