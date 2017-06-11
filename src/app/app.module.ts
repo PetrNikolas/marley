@@ -3,9 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// Others libs
-import { Ng2PageTransitionModule } from "ng2-page-transition";
-
 // Routings
 import { routing } from './app.routes';
 
@@ -31,8 +28,7 @@ import { HttpApiService } from './services/http-api.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing,
-    Ng2PageTransitionModule
+    routing
   ],
   providers: [
     HttpApiService
