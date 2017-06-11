@@ -16,6 +16,9 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 
+// Services 
+import { HttpApiService } from './services/http-api.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,9 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     routing,
     Ng2PageTransitionModule
   ],
-  providers: [],
+  providers: [
+    HttpApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
