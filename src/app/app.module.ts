@@ -7,11 +7,11 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routes';
 
 // Components
-import { AppComponent } from './components/app.component';
-import { HeaderComponent } from './components/shared/header/header.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
+import { AppComponent } from './modules/app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 // Services 
 import { HttpApiService } from './services/http-api.service';

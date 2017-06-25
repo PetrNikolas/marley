@@ -1,7 +1,7 @@
 # Marley.js
 
 Mini Starter Kit for complex web apps.
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.1.3.
 
 ## Demo
 
