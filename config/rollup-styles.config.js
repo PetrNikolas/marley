@@ -2,6 +2,7 @@ import rollup from 'rollup'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import uglify from 'rollup-plugin-uglify'
 import commonjs from 'rollup-plugin-commonjs';
+import babel from 'rollup-plugin-babel';
 
 export default {
     entry: 'dist/styles.bundle.js',
@@ -17,6 +18,9 @@ export default {
         console.warn(warning.message);
     },
     plugins: [
+        babel({
+            exclude: 'node_modules/**',
+        }),
         nodeResolve({ jsnext: true, module: true }),
         commonjs({
             include: 'node_modules/rxjs/**',
