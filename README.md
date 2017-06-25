@@ -1,7 +1,6 @@
 # Marley.js
 
 Mini Starter Kit for complex web apps.
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.1.3.
 
 ## Demo
 
@@ -21,7 +20,6 @@ https://angular-starter-app.herokuapp.com/
 * [Express.js](http://expressjs.com),
 * [Bulma](http://bulma.io/),
 * [Sass](http://sass-lang.com/),
-* [Bourbon](http://bourbon.io/),
 * [Animate.css](https://github.com/daneden/animate.css).
 
 ## Project Setup and start

@@ -1,6 +1,5 @@
 /* Imports */
 
-@import "assets/stylesheets/libs/bourbon/bourbon";
 @import "assets/stylesheets/shared/variables";
 @import "assets/stylesheets/shared/loader";
 
@@ -19,7 +18,7 @@ hr{
 }
 
 .button{
-  border-radius: rem(100);
+  border-radius: 100px;
 }
 
 strong{
@@ -27,12 +26,12 @@ strong{
 }
 
 span{
-  border-bottom: rem(1) solid;
+  border-bottom: 1px solid;
 }
 
 a{
   text-decoration: none;
-  border-bottom: rem(1) dotted;
+  border-bottom: 1px dotted;
   color: $main-color;
   -webkit-transition: color .4s ease-out;
   -moz-transition: color .4s ease-out;
@@ -42,7 +41,7 @@ a{
 
 a:hover{
   color: $brand-color;
-  border-bottom: rem(1) solid;
+  border-bottom: 1px solid;
   text-decoration: none;
 }
 

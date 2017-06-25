@@ -1,6 +1,5 @@
 /* Imports */
 
-@import "../../../assets/stylesheets/libs/bourbon/bourbon";
 @import "../../../assets/stylesheets/shared/variables";
 
 /* Header Styles */
@@ -11,6 +10,6 @@
         border-bottom: none !important;
     }
     .is-brand {
-        font-size: rem(30);
+        font-size: 30px;
     }
 }

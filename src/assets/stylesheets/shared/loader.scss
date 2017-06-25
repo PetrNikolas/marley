@@ -1,6 +1,5 @@
 /* Imports */
 
-@import "../libs/bourbon/bourbon";
 @import "variables";
 
 /* Loader */
@@ -13,11 +12,11 @@
 }
 
 .loader {
-  border: rem(16) solid $main-color;
-  border-top: rem(16) solid $brand-color;
+  border: 16px solid $main-color;
+  border-top: 16px solid $brand-color;
   border-radius: 50%;
-  width: rem(120);
-  height: rem(120);
+  width: 120px;
+  height: 120px;
   animation: spin 2s linear infinite;
 }
 
