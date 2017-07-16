@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Morph API!</title>
+
+    <!-- Meta Tags-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Petr Nikolas">
+    <meta http-equiv="Content-language" content="en">
+    <meta name='reply-to' content='petr.nikolas@icloud.com'>
+    <meta name='url' content=''>
+    <meta name='identifier-URL' content=''>
+
+    <!-- OG Meta tags -->
+    <meta property="og:title" content="Morph API!">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+    <!-- Twitter Meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Morph API!">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- MS Application -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="">
+
+    <!-- OG Meta Tags-->
+    <meta property="og:title" content="Morph API">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item" href="https://github.com/PetrNikolas/morph-api">
+            MORPH API
+          </a>
+        </div>
+        <!--<div class="nav-right">
+          <a class="nav-item" href="https://github.com/PetrNikolas/morph-api">
+            MORPH API
+          </a>
+        </div>-->
+      </div>
+    </nav>
+
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+    <main role="main">
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+
+    <!-- JS -->
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

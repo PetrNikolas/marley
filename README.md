@@ -1,16 +1,15 @@
-# Marley.js
+# Marley
 
 Mini Starter Kit for complex web apps.
-
-## Demo
-
-https://angular-starter-app.herokuapp.com/
 
 ## Prerequisites
 
 * [angular-cli](https://github.com/angular/angular-cli),
 * [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm).
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* [Elixir](elixir-lang.org/),
+* [Phoenix framework](http://www.phoenixframework.org/),
+* [PosgreSQL](https://www.postgresql.org).
 
 ## Main Libraries
 
@@ -18,6 +17,9 @@ https://angular-starter-app.herokuapp.com/
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
 * [Express.js](http://expressjs.com),
+* [Elixir](elixir-lang.org/),
+* [Phoenix framework](http://www.phoenixframework.org/),
+* [PosgreSQL](https://www.postgresql.org/),
 * [Bulma](http://bulma.io/),
 * [Sass](http://sass-lang.com/),
 * [Animate.css](https://github.com/daneden/animate.css).
@@ -26,36 +28,17 @@ https://angular-starter-app.herokuapp.com/
 
 1. Clone or download this repo. 
 
-2. Run `npm install`.
+### Client side setup
 
+1. Run `cd client`.
+2. Run `npm install`.
 3. Run `npm start` and visit http://localhost:8080/. That's it!.
 
-### For Development Angular Server
+### API side setup
 
-4. Run `ng build`
-
-5. Run `ng serve` and visit http://localhost:4200/.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-6. Run `npm run build`
-
-7. Run `npm start` and visit http://localhost:4200/.
-
-## Running unit tests
-
-8. Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-9. Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-10. Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+1. Run `cd api`.
+2. Run `mix deps.get`.
+3. Create and migrate your database with `mix ecto.create && mix ecto.migrate`.
+4. Run `npm install`.
+5. Start Phoenix endpoint with `mix phoenix.server`.
+6. Now you can visit http://localhost:4000/. That's it!.

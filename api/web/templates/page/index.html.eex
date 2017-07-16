@@ -1,0 +1,10 @@
+<section class="hero is-fullheight has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        <%= gettext "Welcome to %{name}", name: "Phoenix Starter Kit!" %>
+      </h1>
+      <p>A productive web framework that does not compromise speed and maintainability.</p>
+    </div>
+  </div>
+</section>
