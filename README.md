@@ -26,7 +26,7 @@ Mini Starter Kit for complex web apps.
 
 ## Project Setup and start
 
-1. Clone or download this repo. 
+Clone or download this repo. 
 
 ### Client side setup
 
