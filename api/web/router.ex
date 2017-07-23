@@ -25,18 +25,18 @@ defmodule Api.Router do
   scope "/api", Api do
     pipe_through :api
     
-    resources "/users", UserController, except: [:new, :edit]
+    #resources "/users", UserController, except: [:new, :edit]
 
-    resources "/requests", RequestController, except: [:new, :edit]
+    #resources "/requests", RequestController, except: [:new, :edit]
 
     # Versions of API
-    #scope "/v1", V1, as: :v1 do
+    scope "/v1", V1, as: :v1 do
       
-      #resources "/users", UserController, except: [:new, :edit]
+      resources "/users", UserController, except: [:new, :edit]
 
-      #resources "/requests", RequestController, except: [:new, :edit]
+      resources "/requests", RequestController, except: [:new, :edit]
 
-    #end
+    end
 
   end
 end
