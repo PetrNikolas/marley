@@ -24,6 +24,9 @@ defmodule Api.Router do
   # Other scopes may use custom stacks.
   scope "/api", Api do
     pipe_through :api
+    
     resources "/users", UserController, except: [:new, :edit]
+
+    resources "/requests", RequestController, except: [:new, :edit]
   end
 end
