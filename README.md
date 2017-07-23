@@ -1,6 +1,6 @@
 # Marley
 
-Mini Starter Kit for complex web apps.
+Mini Starter Kit for complex web apps and versioned REST API.
 
 ## Prerequisites
 

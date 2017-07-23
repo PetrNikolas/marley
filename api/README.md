@@ -1,6 +1,6 @@
 # Marley API
 
-API side.
+A versioned REST API.
 
 ## Prerequisites
 

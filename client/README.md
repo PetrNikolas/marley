@@ -1,6 +1,6 @@
 # Marley Client
 
-Client side.
+Angular Single Page App.
 
 ## Prerequisites
 
