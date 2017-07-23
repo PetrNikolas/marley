@@ -28,5 +28,15 @@ defmodule Api.Router do
     resources "/users", UserController, except: [:new, :edit]
 
     resources "/requests", RequestController, except: [:new, :edit]
+
+    # Versions of API
+    #scope "/v1", V1, as: :v1 do
+      
+      #resources "/users", UserController, except: [:new, :edit]
+
+      #resources "/requests", RequestController, except: [:new, :edit]
+
+    #end
+
   end
 end
