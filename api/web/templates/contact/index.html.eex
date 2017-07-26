@@ -1,9 +1,0 @@
-<section class="hero is-fullheight has-text-centered">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        <%= gettext "Welcome to %{name}", name: "contact page!" %>
-      </h1>
-    </div>
-  </div>
-</section>
