@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Title -->
-    <title>Morph API!</title>
+    <title>Marley API!</title>
 
     <!-- Meta Tags-->
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
     <meta name='identifier-URL' content=''>
 
     <!-- OG Meta tags -->
-    <meta property="og:title" content="Morph API!">
+    <meta property="og:title" content="Marley API!">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
 
     <!-- Twitter Meta tags -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Morph API!">
+    <meta name="twitter:title" content="Marley API!">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
 
@@ -34,7 +34,7 @@
     <meta name="msapplication-TileImage" content="">
 
     <!-- OG Meta Tags-->
-    <meta property="og:title" content="Morph API">
+    <meta property="og:title" content="Marley API">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
 
@@ -50,7 +50,7 @@
       <div class="container">
         <div class="nav-left">
           <a class="nav-item" href="https://github.com/PetrNikolas/morph-api">
-            MORPH API
+            Marley API
           </a>
         </div>
         <!--<div class="nav-right">

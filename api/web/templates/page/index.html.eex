@@ -2,9 +2,9 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        <%= gettext "Welcome to %{name}", name: "Phoenix Starter Kit!" %>
+        <%= gettext "Welcome to %{name}", name: "Mini Starter Kit for complex web apps!" %>
       </h1>
-      <p>A productive web framework that does not compromise speed and maintainability.</p>
+      <p>Full-stack solution for modern web development.</p>
     </div>
   </div>
 </section>
