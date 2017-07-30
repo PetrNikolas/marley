@@ -2,6 +2,8 @@
 
 Mini Starter Kit for complex web apps and versioned REST API.
 
+Version: 0.3.1
+
 ## Prerequisites
 
 * [angular-cli](https://github.com/angular/angular-cli),

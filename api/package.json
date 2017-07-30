@@ -1,9 +1,9 @@
 {
     "author": "Petr Nikolas",
     "license": "MIT",
-    "name": "API-solution-for-modern-web-applications",
+    "name": "marley-api",
     "description": "Phoenix starter project",
-    "version": "0.1.0",
+    "version": "0.3.1",
     "main": "brunch-config.js",
     "scripts": {
         "deploy": "brunch build --production",
