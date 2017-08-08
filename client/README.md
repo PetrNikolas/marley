@@ -2,13 +2,7 @@
 
 Angular Single Page App.
 
-## Prerequisites
-
-* [angular-cli](https://github.com/angular/angular-cli),
-* [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm).
-
-## Main Libraries
+## Prerequisites and Main Libraries
 
 * [Angular 2](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),

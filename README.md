@@ -6,11 +6,19 @@ Version: 0.3.1
 
 ## Prerequisites
 
+### Client
 * [angular-cli](https://github.com/angular/angular-cli),
 * [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm)
+* [NPM](https://docs.npmjs.com/getting-started/what-is-npm).
+
+### API
 * [Elixir](elixir-lang.org/),
-* [Phoenix framework](http://www.phoenixframework.org/),
+* [Phoenix framework](http://www.phoenixframework.org/).
+
+### Mobile
+* [Ionic](http://ionicframework.com/).
+
+### Database
 * [PosgreSQL](https://www.postgresql.org).
 
 ## Main Libraries
@@ -44,3 +52,14 @@ Clone or download this repo.
 4. Run `npm install`.
 5. Start Phoenix endpoint with `mix phoenix.server`.
 6. Now you can visit http://localhost:4000/. That's it!.
+
+## Roadmap
+
+### What's Coming in 2017
+
+* Angular Universal - client
+* Autoprefixer - client
+* Gulp, etc. build - client
+* GraphQL - api
+* ElasticSearch - api
+* Redux - client

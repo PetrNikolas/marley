@@ -2,15 +2,7 @@
 
 A versioned REST API.
 
-## Prerequisites
-
-* [Elixir](elixir-lang.org/),
-* [Phoenix framework](http://www.phoenixframework.org/),
-* [PosgreSQL](https://www.postgresql.org),
-* [Node.js v6 and +](https://nodejs.org/en/download/),
-* [NPM](https://docs.npmjs.com/getting-started/what-is-npm).
-
-## Main Libraries
+## Prerequisites and Main Libraries
 
 * [Elixir](elixir-lang.org/),
 * [Phoenix framework](http://www.phoenixframework.org/),
