@@ -57,9 +57,17 @@ Clone or download this repo.
 
 ### What's Coming in 2017
 
-* Angular Universal - client
-* Autoprefixer - client
-* Gulp, etc. build - client
-* GraphQL - api
-* ElasticSearch - api
-* Redux - client
+#### For Client:
+* Integrate Angular Universal library
+* Integrate Autoprefixer library
+* Integrate Gulp, Broccoli.js build
+* Integrate GraphQL data query
+* Integrate Redux and ngrx architecture
+
+#### For API:
+* Integrate ElasticSearch, Kibana, Logstash, Beats for data, visualization, etc.
+* Integrate Redis for data caching
+* Integrate Kafka
+* Integrate RabbitMQ messages
+* Integrate Grafana
+* Integrate Kubernetes
