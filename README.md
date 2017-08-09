@@ -27,6 +27,8 @@ Version: 0.3.1
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
 * [Express.js](http://expressjs.com),
+* [Webpack](https://webpack.js.org/),
+* [Rollup.js](https://rollupjs.org/),
 * [Elixir](elixir-lang.org/),
 * [Phoenix framework](http://www.phoenixframework.org/),
 * [PosgreSQL](https://www.postgresql.org/),
@@ -65,6 +67,7 @@ Clone or download this repo.
 * Integrate Redux and ngrx architecture
 
 #### For API:
+* Change phoenix backend for node.js
 * Integrate ElasticSearch, Kibana, Logstash, Beats for data, visualization, etc.
 * Integrate Redis for data caching
 * Integrate Kafka
