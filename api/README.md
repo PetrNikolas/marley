@@ -1,24 +1,19 @@
-# README
+# Marley API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A versioned REST API.
 
-Things you may want to cover:
+## Prerequisites and Main Libraries
 
-* Ruby version
+* [Elixir](elixir-lang.org/),
+* [Phoenix framework](http://www.phoenixframework.org/),
+* [PosgreSQL](https://www.postgresql.org/),
+* [Bulma](http://bulma.io/),
+* [Sass](http://sass-lang.com/).
 
-* System dependencies
+## Project Setup and start
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Run `mix deps.get`.
+2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`.
+3. Run `npm install`.
+4. Start Phoenix endpoint with `mix phoenix.server`.
+5. Now you can visit http://localhost:4000/. That's it!.

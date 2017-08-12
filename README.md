@@ -46,12 +46,10 @@ Clone or download this repo.
 
 ### API side setup
 
-1. Run `cd api`.
-2. Run `mix deps.get`.
-3. Create and migrate your database with `mix ecto.create && mix ecto.migrate`.
-4. Run `npm install`.
-5. Start Phoenix endpoint with `mix phoenix.server`.
-6. Now you can visit http://localhost:4000/. That's it!.
+1. Run `bundle install`.
+2. Create and migrate your database with `rake db:create && rake db:migrate && rake db:seed`.
+3. Start Phoenix endpoint with `rails s`.
+4. Now you can visit http://localhost:3000/. That's it!.
 
 ## Roadmap
 
@@ -65,7 +63,6 @@ Clone or download this repo.
 * Integrate Redux and ngrx architecture
 
 #### For API:
-* Change phoenix backend for node.js
 * Integrate ElasticSearch, Kibana, Logstash, Beats for data, visualization, etc.
 * Integrate Redis for data caching
 * Integrate Kafka
