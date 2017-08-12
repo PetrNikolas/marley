@@ -26,7 +26,7 @@ Version: 0.3.1
 * [Angular 2](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
-* [Express.js](http://expressjs.com),
+* [koa.js](http://koajs.com/),
 * [Webpack](https://webpack.js.org/),
 * [Rollup.js](https://rollupjs.org/),
 * [Elixir](elixir-lang.org/),

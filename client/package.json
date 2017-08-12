@@ -15,7 +15,7 @@
         "pree2e": "webdriver-manager update --standalone false --gecko false",
         "e2e": "protractor",
         "build": "npm run prefixcss && ng build --aot && rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js",
-        "start": "node server/server.js"
+        "start": "node server/index.js"
     },
     "dependencies": {
         "@angular/common": "^4.0.2",
@@ -28,7 +28,10 @@
         "@angular/router": "^3.3.1",
         "bulma": "^0.3.1",
         "core-js": "^2.4.1",
-        "express": "^4.14.1",
+        "koa": "^2.3.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-router": "^7.2.1",
+        "koa-static": "^4.0.1",
         "rxjs": "^5.0.1",
         "ts-helpers": "^1.1.1",
         "zone.js": "^0.7.2"
