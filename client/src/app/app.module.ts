@@ -1,38 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
-
-// Routings
-import { routing } from './app.routes';
-
-// Components
-import { AppComponent } from './modules/app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { WelcomeComponent } from './modules/welcome/welcome.component';
-import { ContactComponent } from './modules/contact/contact.component';
-import { FooterComponent } from './components/footer/footer.component';
-
-// Services 
-import { HttpApiService } from './services/http-api.service';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HomeView } from './home/home-view.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    WelcomeComponent,
-    ContactComponent,
-    FooterComponent
-  ],
   imports: [
-    BrowserModule,
-    FormsModule,
+    CommonModule,
     HttpModule,
-    routing
+    RouterModule.forRoot([
+      { path: '', component: HomeView, pathMatch: 'full'},
+      { path: 'lazy', loadChildren: './+lazy/lazy.module#LazyModule'}
+    ])
   ],
-  providers: [
-    HttpApiService
-  ],
-  bootstrap: [AppComponent]
+  declarations: [ AppComponent, HomeView ],
+  exports: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {}
