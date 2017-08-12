@@ -44,7 +44,8 @@ Clone or download this repo.
 
 1. Run `cd client`.
 2. Run `npm install`.
-3. Run `npm start` and visit http://localhost:8080/. That's it!.
+3. Run `npm run build`.
+4. Run `npm start` and visit http://localhost:8080/. That's it!.
 
 ### API side setup
 
@@ -61,7 +62,7 @@ Clone or download this repo.
 
 #### For Client:
 * Integrate Angular Universal library
-* Integrate Autoprefixer library
+* Integrate Autoprefixer library ✓
 * Integrate Gulp, Broccoli.js build
 * Integrate GraphQL data query
 * Integrate Redux and ngrx architecture
