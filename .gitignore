@@ -2,9 +2,17 @@
 
 # compiled output
 /tmp
+api/public/assets*
+api/tmp
+/api/public/assets*
+/api/tmp
 
 # dependencies
 /node_modules
+/api/node_modules
+/client/node_modules
+client/node_modules
+api/node_modules
 
 # IDEs and editors
 /.idea
