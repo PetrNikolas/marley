@@ -3,7 +3,7 @@
     "license": "MIT",
     "name": "marley-api",
     "description": "Phoenix starter project",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "main": "brunch-config.js",
     "scripts": {
         "deploy": "brunch build --production",

@@ -2,7 +2,7 @@
 
 Mini Starter Kit for complex web apps and versioned REST API.
 
-Version: 0.3.1
+Version: 0.3.2
 
 ## Prerequisites
 
