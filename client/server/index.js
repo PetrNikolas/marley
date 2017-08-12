@@ -1,6 +1,6 @@
 'use strict';
 const koa = require('koa');
-const router = require('./router');
+const router = require('./routes/index');
 const staticServe = require('koa-static');
 const bodyParser = require('koa-bodyparser');
 const config = require('./config');

@@ -63,7 +63,7 @@ Clone or download this repo.
 #### For Client:
 * Integrate Angular Universal library
 * Integrate Autoprefixer library ✓
-* Integrate Gulp, Broccoli.js build
+* Integrate Broccoli.js build
 * Integrate GraphQL data query
 * Integrate Redux and ngrx architecture
 
