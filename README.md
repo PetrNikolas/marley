@@ -15,9 +15,6 @@ Version: 0.3.2
 * [Elixir](elixir-lang.org/),
 * [Phoenix framework](http://www.phoenixframework.org/).
 
-### Mobile
-* [Ionic](http://ionicframework.com/).
-
 ### Database
 * [PosgreSQL](https://www.postgresql.org).
 
