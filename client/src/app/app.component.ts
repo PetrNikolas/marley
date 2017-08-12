@@ -3,7 +3,7 @@ import { TransferState } from '../modules/transfer-state/transfer-state';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
 
 @Component({
-  selector: 'demo-app',
+  selector: 'app-root',
   template: `
     <h1>Universal Demo using Angular</h1>
     <a routerLink="/">Home</a>

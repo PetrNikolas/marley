@@ -1,11 +1,9 @@
 {
   "name": "marley-client",
   "version": "0.3.2",
-  "license": "MIT",
-  "angular-cli": {},
   "engines": {
-      "node": "6.9.2",
-      "npm": "3.10.9"
+    "node": "8.1.4",
+    "npm": "5.0.3"
   },
   "scripts": {
     "start": "npm run build && npm run server",
