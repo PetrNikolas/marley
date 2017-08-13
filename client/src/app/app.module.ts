@@ -1,35 +1,38 @@
-// Angular libs
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_BASE_HREF, CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+
+// Routings
+import { routing } from './app.routes';
 
 // Components
-import { AppComponent } from './app.component';
-import { Home } from './home/home.component';
-import { Header } from './header/header.component';
-import { Footer } from './footer/footer.component';
+import { AppComponent } from './modules/app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { ContactComponent } from './modules/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
-// Module
+// Services 
+import { HttpApiService } from './services/http-api.service';
+
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpModule,
-    RouterModule.forRoot([
-      { path: '', component: Home, pathMatch: 'full'},
-      { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'}
-    ])
-  ],
-  declarations: [ 
-    AppComponent, 
-    Home 
-  ],
-  exports: [ 
+  declarations: [
     AppComponent,
-    Header,
-    Footer 
-  ]
+    HeaderComponent,
+    WelcomeComponent,
+    ContactComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing
+  ],
+  providers: [
+    HttpApiService
+  ],
+  bootstrap: [AppComponent]
 })
-
-export class AppModule {}
+export class AppModule { }
