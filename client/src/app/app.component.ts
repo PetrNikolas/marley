@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TransferState } from '../modules/transfer-state/transfer-state';
+import { TransferState } from '../utilities/transfer-state/transfer-state.service';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
 
 @Component({
@@ -10,11 +10,7 @@ import { REQUEST } from '@nguniversal/express-engine/tokens';
     <a routerLink="/lazy">Lazy</a>
     <router-outlet></router-outlet>
   `,
-  styles: [
-    `h1 {
-      color: green;
-    }`
-  ]
+  styleUrls: ['./app.scss']
 })
 export class AppComponent implements OnInit {
   constructor(private cache: TransferState) { }

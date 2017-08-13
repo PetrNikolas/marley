@@ -7,15 +7,12 @@ Version: 0.3.2
 ## Prerequisites and Main Libraries
 
 ### Front-End
-* [Angular 2](https://angular.io/),
-* [Angular-cli](https://github.com/angular/angular-cli),
+* [Angular](https://angular.io/),
 * [Node.js](https://nodejs.org/en/),
-* [koa.js](http://koajs.com/),
 * [Webpack](https://webpack.js.org/),
 * [Rollup.js](https://rollupjs.org/),
 * [Bulma](http://bulma.io/),
-* [Sass](http://sass-lang.com/),
-* [Animate.css](https://github.com/daneden/animate.css).
+* [Sass](http://sass-lang.com/).
 
 ### Back-End
 * [Ruby](https://www.ruby-lang.org/),

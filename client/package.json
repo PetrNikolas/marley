@@ -7,8 +7,10 @@
   },
   "scripts": {
     "start": "npm run build && npm run server",
-    "prefixcss": "postcss -s postcss-scss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r src/**/*.scss",
-    "build": "npm run prefixcss && webpack && rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js",
+    "postcss": "postcss -s postcss-scss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r src/**/*.scss",
+    "webpack": "./node_modules/webpack/bin/webpack.js --config ./config/webpack.config.js",
+    "rollup": "rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js",
+    "build": "npm run postcss && npm run webpack",
     "build:aot": "webpack --env.aot --env.client & webpack --env.aot --env.server",
     "build:prod": "webpack --env.aot --env.client -p & webpack --env.aot --env.server",
     "prebuild": "npm run clean",

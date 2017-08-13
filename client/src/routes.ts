@@ -1,6 +1,4 @@
-/**
- * Routes which are handled by Angular in Express
- */
+// Routes which are handled by Angular in Node.js
 export const ROUTES: string[] = [
   '/',
   '/lazy'

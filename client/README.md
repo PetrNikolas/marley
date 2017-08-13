@@ -9,8 +9,7 @@ Angular Single Page App.
 * [Webpack](https://webpack.js.org/),
 * [Rollup.js](https://rollupjs.org/),
 * [Bulma](http://bulma.io/),
-* [Sass](http://sass-lang.com/),
-* [Animate.css](https://github.com/daneden/animate.css).
+* [Sass](http://sass-lang.com/).
 
 ## Project Setup and start
 
