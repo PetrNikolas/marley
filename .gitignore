@@ -2,17 +2,9 @@
 
 # compiled output
 /tmp
-api/public/assets*
-api/tmp
-/api/public/assets*
-/api/tmp
 
 # dependencies
 /node_modules
-/api/node_modules
-/client/node_modules
-client/node_modules
-api/node_modules
 
 # IDEs and editors
 /.idea
@@ -46,28 +38,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-client/.idea
-client/.DS_Store
-client/morgan.log
-
-# Built #
-client//__build__/
-client//__server_build__/
-client//typings/
-client//tsd_typings/
-client//dist/
-client//compiled/
-
 # Node #
-client/npm-debug.log
-client//npm-debug.log.*
+npm-debug.log
+npm-debug.log.*
 
 # Webpack #
-client/webpack.records.json
-
-# Angular #
-client/*.ngfactory.ts
-client/*.css.shim.ts
-client/*.ngsummary.json
-client/*.metadata.json
-client/*.shim.ngstyle.ts
+webpack.records.json

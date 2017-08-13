@@ -1,4 +1,0 @@
-project=api
-architecture=container
-test=minitest
-template=erb

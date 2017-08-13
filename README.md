@@ -1,66 +1,51 @@
 # Marley
 
-Mini Starter Kit for complex web apps and versioned REST API.
+Angular Single Page App.
 
-Version: 0.3.2
+* Version 0.3.2
 
 ## Prerequisites and Main Libraries
 
-### Front-End
-* [Angular](https://angular.io/),
+* [Angular 2](https://angular.io/),
+* [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
+* [koa.js](http://koajs.com/),
 * [Webpack](https://webpack.js.org/),
 * [Rollup.js](https://rollupjs.org/),
 * [Bulma](http://bulma.io/),
-* [Sass](http://sass-lang.com/).
-
-### Back-End
-* [Ruby](https://www.ruby-lang.org/),
-* [Hanami](http://hanamirb.org/),
-* [Sinatra](http://www.sinatrarb.com/),
-* [PosgreSQL](https://www.postgresql.org/),.
+* [Sass](http://sass-lang.com/),
+* [Animate.css](https://github.com/daneden/animate.css).
 
 ## Project Setup and start
 
-Clone or download this repo. 
-
-### Client setup
-* `cd client`
-1. Run `cd client`.
+1. Run `cd marley`.
 2. Run `npm install`.
 3. Run `npm run build`.
 4. Run `npm start` and visit http://localhost:8080/. That's it!.
 
-### API setup
-* `cd api`
-1. Run `bundle install`.
-2. Run `bundle exec hanami db migrate`.
-3. Start Phoenix endpoint with `bundle exec hanami server`.
-3. Now you can visit http://localhost:2300. That's it!.
+### For Development Angular Server
 
-### Worker
-* `cd worker`
-1. Run `bundle install`.
-3. Run `ruby server.rb`.
+3. Run `ng build`.
+4. Run `ng serve` and visit http://localhost:4200/.
 
-### Proxy server
-* `cd proxy_server`
-1. Run `go run main.go`.
+## Code scaffolding
 
-## Roadmap
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-### What's Coming in 2017
-#### For Client:
-* Integrate Angular Universal library
-* Integrate Autoprefixer library ✓
-* Integrate Broccoli.js build
-* Integrate GraphQL data query
-* Integrate Redux and ngrx architecture
+## Build for Production
 
-#### For API:
-* Integrate ElasticSearch, Kibana, Logstash, Beats for data, visualization, etc.
-* Integrate Redis for data caching
-* Integrate Kafka
-* Integrate RabbitMQ messages
-* Integrate Grafana
-* Integrate Kubernetes
+5. Run `npm run build`
+6. Run `npm start` and visit http://localhost:4200/.
+
+## Running unit tests
+
+7. Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+8. Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+9. Before running the tests make sure you are serving the app via `ng serve`.
+
+## Running lint
+
+10. Run `ng lint`.
