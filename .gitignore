@@ -44,3 +44,6 @@ npm-debug.log.*
 
 # Webpack #
 webpack.records.json
+
+# Build #
+/dist
