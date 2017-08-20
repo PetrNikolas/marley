@@ -1,8 +1,8 @@
 # Marley
 
-Angular Single Page App.
+Mini Starter Kit for complex web apps.
 
-* Version 0.3.3
+* Version 0.3.4
 
 ## Prerequisites and Main Libraries
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Services
-import { HttpApiService } from '../../services/http-api.service';
+import { HttpApiService } from '../services/http-api.service';
 
 @Component({
   selector: 'app-contact',

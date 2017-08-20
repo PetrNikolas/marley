@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class HttpApiService {
 
+  // Url for REAST API
   private apiUrlV1 = 'http://localhost:4000/api/v1/';
 
   constructor(private http: Http) {}
