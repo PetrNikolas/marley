@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// Services 
+// Services
 import { HttpApiService } from '../../services/http-api.service';
 
 @Component({

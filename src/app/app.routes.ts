@@ -1,8 +1,8 @@
 // Imports
-import { ModuleWithProviders }  from '@angular/core';
+import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WelcomeComponent } from './modules/welcome/welcome.component';
-import { ContactComponent } from './modules/contact/contact.component';
+import { WelcomeComponent } from './welcome/container/welcome.component';
+import { ContactComponent } from './contact/container/contact.component';
 
 // Route Configuration
 export const routes: Routes = [
