@@ -6,6 +6,7 @@ Mini Starter Kit for complex web apps.
 
 ## Prerequisites and Main Libraries
 
+### Client
 * [Angular 2](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
@@ -16,9 +17,20 @@ Mini Starter Kit for complex web apps.
 * [Sass](http://sass-lang.com/),
 * [Animate.css](https://github.com/daneden/animate.css).
 
+### API
+* [Go](https://golang.org/),
+* [Iris](https://iris-go.com/).
+
+### DB
+* [GraphQL](http://graphql.org/),
+* [RocksDB](http://rocksdb.org/).
+
 ## Project Setup and start
 
-### Web setup
+### App
+
+`cd client`
+
 1. Run `cd marley`.
 2. Run `npm install`.
 3. Run `npm run build`.
@@ -44,3 +56,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 #### Running lint
 10. Run `ng lint`.
+
+### API
+
+`cd api`
+
+1. Run `go run main.go`.
+2. Finally open your browser and try to open http://localhost:8080/.

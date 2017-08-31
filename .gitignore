@@ -1,0 +1,15 @@
+
+.build
+.DS_Store
+
+/app/.next
+app/.next
+/app/node_modules
+app/node_modules
+
+microservice/.bundle
+/microservice/.bundle
+microservice/config/database.yml
+/microservice/config/database.yml
+/microservice/Gemfile.lock
+microservice/Gemfile.lock
