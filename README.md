@@ -18,8 +18,8 @@ Mini Starter Kit for complex web apps.
 * [Animate.css](https://github.com/daneden/animate.css).
 
 ### API
-* [Go](https://golang.org/),
-* [Iris](https://iris-go.com/).
+* [Elixir](https://elixir-lang.org/),
+* [Phoenix framework](http://phoenixframework.org/).
 
 ### DB
 * [GraphQL](http://graphql.org/),
@@ -61,5 +61,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 `cd api`
 
-1. Run `go run main.go`.
-2. Finally open your browser and try to open http://localhost:8080/.
+1. Install dependencies with `mix deps.get`.
+2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`.
+3. Start Phoenix endpoint with `mix phoenix.server`.
+4. Finally open your browser and try to open http://localhost:4000/.
