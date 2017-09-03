@@ -1,14 +1,10 @@
-
-.build
-.DS_Store
-
-# Client
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
 /tmp
 
 # dependencies
-client/node_modules
+/node_modules
 
 # IDEs and editors
 /.idea
@@ -30,46 +26,24 @@ client/node_modules
 /connect.lock
 /coverage/*
 /libpeerconnection.log
-client/npm-debug.log
+npm-debug.log
 testem.log
-client/typings
+/typings
 
 # e2e
-client/e2e/*.js
-client/e2e/*.map
+/e2e/*.js
+/e2e/*.map
 
 #System Files
 .DS_Store
 Thumbs.db
 
 # Node #
-client/npm-debug.log
-client/npm-debug.log.*
+npm-debug.log
+npm-debug.log.*
 
 # Webpack #
-client/webpack.records.json
+webpack.records.json
 
 # Build #
-client/dist
-
-
-
-# API
-
-# App artifacts
-api/_build
-api/db
-api/deps
-api/*.ez
-
-# Generated on crash by the VM
-api/erl_crash.dump
-
-# The config/prod.secret.exs file by default contains sensitive
-# data and you should not commit it into version control.
-#
-# Alternatively, you may comment the line below and commit the
-# secrets file as long as you replace its contents by environment
-# variables.
-
-
+/dist
