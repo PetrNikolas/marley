@@ -11,11 +11,13 @@
     "ng": "ng",
     "prefixcss": "postcss -s postcss-scss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r src/**/*.scss",
     "lint": "tslint \"src/**/*.ts\" --project src/tsconfig.json --type-check && tslint \"e2e/**/*.ts\" --project e2e/tsconfig.json --type-check",
-    "test": "karma start ./karma.conf.js",
+    "test": "karma start ./config/karma.conf.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
-    "e2e": "protractor ./protractor.conf.js",
-    "build": "webpack",
-    "start": "webpack-dev-server --port=4200"
+    "e2e": "protractor ./config/protractor.conf.js",
+    "build:dev": "webpack --config ./config/webpack.config.js",
+    "build:prod": "npm run prefixcss && npm run build:dev && rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js",
+    "dev": "webpack-dev-server --config ./config/webpack.config.js --port=4200",
+    "start": "node ./server/app.js"
   },
   "dependencies": {
     "@angular/common": "^4.0.2",

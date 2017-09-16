@@ -1,9 +1,9 @@
 'use strict';
 const koa = require('koa');
-const router = require('./server/routes/index');
+const router = require('./routes/index');
 const staticServe = require('koa-static');
 const bodyParser = require('koa-bodyparser');
-const config = require('./server/config');
+const config = require('./config');
 
 // Defined new Koa app
 const app = new koa();
