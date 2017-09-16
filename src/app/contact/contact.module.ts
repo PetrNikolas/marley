@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 // Container
-import { ContactComponent } from './container/contact.component';
+import { ContactComponent } from './pages/contact.component';
 
 // Routings
 import { routing } from './contact.routes';

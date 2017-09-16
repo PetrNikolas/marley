@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Container
-import { WelcomeComponent } from './container/welcome.component';
+import { WelcomeComponent } from './pages/welcome.component';
 
 @NgModule({
   imports: [

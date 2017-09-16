@@ -3,7 +3,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // Container
-import { ContactComponent } from './container/contact.component';
+import { ContactComponent } from './pages/contact.component';
 
 // Route Configuration
 export const routes: Routes = [
