@@ -10,9 +10,6 @@ import { ContactComponent } from './pages/contact.component';
 // Routings
 import { routing } from './contact.routes';
 
-// Services
-import { HttpApiService } from './services/http-api.service';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -23,8 +20,6 @@ import { HttpApiService } from './services/http-api.service';
   declarations: [
     ContactComponent
   ],
-  providers: [
-    HttpApiService
-  ]
+  providers: []
 })
 export class ContactModule { }
