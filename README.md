@@ -19,26 +19,26 @@ Mini Starter Kit for complex web apps.
 ## Project Setup and start
 
 1. Run `npm install`.
-2. Run `npm run build`.
-3. Run `npm start` and visit http://localhost:8080/. That's it!.
+2. Run `npm run build:dev`.
+3. Run `npm run dev` and visit http://localhost:4200/. That's it!.
 
-### For Development Angular Server
-4. Run `ng build`.
-5. Run `ng serve` and visit http://localhost:4200/.
+### For Development Server
+4. Run `npm run build:dev`.
+5. Run `npm run dev` and visit http://localhost:4200/.
 
 ### Code scaffolding
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
 ### Build for Production
-6. Run `npm run build`
-7. Run `npm start` and visit http://localhost:4200/.
+6. Run `npm run build:prod`
+7. Run `npm start` and visit http://localhost:8080/.
 
 ### Running unit tests
 8. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ### Running end-to-end tests
 9. Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-10. Before running the tests make sure you are serving the app via `ng serve`.
+10. Before running the tests make sure you are serving the app via `npm run dev`.
 
 ### Running lint
-11. Run `ng lint`.
+11. Run `npm run lint`.
