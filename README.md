@@ -2,7 +2,7 @@
 
 Mini Starter Kit for complex web apps.
 
-* Version 0.3.5
+* Version 0.4.0
 
 ## Prerequisites and Main Libraries
 
@@ -34,10 +34,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 7. Run `npm start` and visit http://localhost:4200/.
 
 ### Running unit tests
-8. Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+8. Run `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ### Running end-to-end tests
-9. Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+9. Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 10. Before running the tests make sure you are serving the app via `ng serve`.
 
 ### Running lint
