@@ -1,6 +1,10 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
 
+
+//------------------------------------------------------------------------------
+// Karma module exports
+//------------------------------------------------------------------------------
 module.exports = function (config) {
   config.set({
     basePath: '',
@@ -12,10 +16,10 @@ module.exports = function (config) {
       require('angular-cli/plugins/karma')
     ],
     files: [
-      { pattern: './src/test.ts', watched: false }
+      { pattern: './client/test.ts', watched: false }
     ],
     preprocessors: {
-      './src/test.ts': ['angular-cli']
+      './client/test.ts': ['angular-cli']
     },
     mime: {
       'text/x-typescript': ['ts','tsx']
