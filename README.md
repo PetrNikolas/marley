@@ -6,7 +6,7 @@ Mini Starter Kit for complex web apps.
 
 ## Prerequisites and Main Libraries
 
-* [Angular 2](https://angular.io/),
+* [Angular](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
 * [koa.js](http://koajs.com/),
