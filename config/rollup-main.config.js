@@ -12,8 +12,8 @@ import babel from 'rollup-plugin-babel';
 // Rollup module exports
 //------------------------------------------------------------------------------
 export default {
-    entry: 'public/main.bundle.js',
-    dest: 'public/main.bundle.js', // output a single application bundle
+    entry: 'dist/main.bundle.js',
+    dest: 'dist/main.bundle.js', // output a single application bundle
     sourceMap: false,
     treeshake: true,
     moduleName: 'main',

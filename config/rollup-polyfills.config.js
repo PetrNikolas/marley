@@ -12,11 +12,11 @@ import babel from 'rollup-plugin-babel';
 // Rollup module exports
 //------------------------------------------------------------------------------
 export default {
-    entry: 'dist/inline.bundle.js',
-    dest: 'dist/inline.bundle.js', // output a single application bundle
+    entry: 'dist/polyfills.bundle.js',
+    dest: 'dist/polyfills.bundle.js', // output a single application bundle
     sourceMap: false,
     treeshake: true,
-    moduleName: 'inline',
+    moduleName: 'vendor',
     format: 'iife',
     onwarn: function(warning) {
         // skip certain warnings

@@ -1,6 +1,6 @@
 {
   "name": "marley",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "license": "MIT",
   "angular-cli": {},
   "engines": {
@@ -13,8 +13,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
+    "rollup": "rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js && rollup --config ./config/rollup-polyfills.config.js",
     "build:dev": "ng build",
-    "build:prod": "ng build --env=prod && rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js",
+    "build:prod": "ng build --env=prod && npm run rollup",
     "dev": "ng serve",
     "start": "node ./server/app.js"
   },
@@ -93,7 +94,6 @@
     "rollup": "^0.43.1",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^8.2.1",
-    "rollup-plugin-multi-entry": "^2.0.1",
     "rollup-plugin-node-globals": "^1.1.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-uglify": "^2.0.1",
