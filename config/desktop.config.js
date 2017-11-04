@@ -26,9 +26,6 @@ module.exports = {
         styles: [
             path.resolve(srcDir, 'styles.bundle.js')
         ],
-        vendor: [
-            path.resolve(srcDir, 'vendor.bundle.js')
-        ],
         main: [
             path.resolve(srcDir, 'main.bundle.js')
         ]
