@@ -41,8 +41,7 @@ Mini Starter Kit for complex web apps.
 
 ### Desktop development build
 
-1. Run `npm run build:desktop`.
-2. Run `npm run serve:electron`.
+1. Run `npm run serve:electron`.
 
 ### Desktop production build
 

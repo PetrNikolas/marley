@@ -15,7 +15,7 @@
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
     "webpack-dashboard": "webpack-dashboard -- node app.js",
     "analyzer": "npm run build:prod && node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js --config ./tools/analyzer.js",
-    "rollup": "rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js && rollup --config ./config/rollup-polyfills.config.js",
+    "rollup": "rollup --config ./config/inline.config.js && rollup --config ./config/main.config.js && rollup --config ./config/styles.config.js && rollup --config ./config/vendor.config.js && rollup --config ./config/polyfills.config.js",
     "build": "ng build --env=prod --build-optimizer=true",
     "build:dev": "ng build",
     "build:prod": "npm run build && npm run rollup",
@@ -27,7 +27,7 @@
     "serve": "ng serve",
     "serve:dev": "npm run build:dev && npm start",
     "serve:prod": "npm run build:prod && npm start",
-    "serve:electron": "NODE_ENV=development electron main",
+    "serve:electron": "npm run build:prod && npm run build:desktop && NODE_ENV=development electron main",
     "start": "node ./server/app.js"
   },
   "dependencies": {
@@ -124,8 +124,6 @@
     "url-loader": "^0.5.7",
     "webpack": "~2.4.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dashboard": "^1.0.0",
-    "webpack-dev-server": "~2.4.5",
-    "webpack-md5-hash": "0.0.5"
+    "webpack-dashboard": "^1.0.0"
   }
 }
