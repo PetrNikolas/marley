@@ -1,6 +1,6 @@
 {
   "name": "marley",
-  "version": "0.5.2",
+  "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
   "engines": {
@@ -9,14 +9,24 @@
   },
   "scripts": {
     "ng": "ng",
+    "lint": "tslint . --config ./config/tslint.json",
     "test": "ng test",
-    "lint": "ng lint",
     "e2e": "ng e2e",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet",
+    "webpack-dashboard": "webpack-dashboard -- node app.js",
+    "analyzer": "npm run build:prod && node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js --config ./tools/analyzer.js",
     "rollup": "rollup --config ./config/rollup-inline.config.js && rollup --config ./config/rollup-main.config.js && rollup --config ./config/rollup-styles.config.js && rollup --config ./config/rollup-vendor.config.js && rollup --config ./config/rollup-polyfills.config.js",
     "build:dev": "ng build",
-    "build:prod": "ng build --env=prod && npm run rollup",
-    "dev": "ng serve",
+    "build:prod": "ng build --env=prod --build-optimizer=true && npm run rollup",
+    "build:desktop": "node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js --config ./config/desktop.config.js",
+    "package": "electron-packager ./desktop \"Spaceti Superadmin\" --platform=darwin --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c) Spaceti.\" --icon=assets/icon.png --out=./desktop/releases/mac --overwrite",
+    "package:linux": "electron-packager ./desktop \"Spaceti Superadmin\" --platform=linux --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c) Spaceti.\" --icon=assets/icon.png --out=./desktop/releases/linux --overwrite",
+    "package:windows": "electron-packager ./desktop \"Spaceti Superadmin\" --platform=win32 --arch=ia32 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c) Spaceti.\" --icon=assets/icon.png --out=./desktop/releases/windows --overwrite --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Spaceti Superadmin\"",
+    "package:windows:x64": "electron-packager ./desktop \"Spaceti Superadmin\" --platform=win32 --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c) Spaceti.\" --icon=assets/icon.png --out=./desktop/releases/windows --overwrite --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Spaceti Superadmin\"",
+    "serve": "ng serve",
+    "serve:dev": "npm run build:dev && npm start",
+    "serve:prod": "npm run build:prod && npm run rollup && npm start",
+    "serve:electron": "NODE_ENV=development electron main",
     "start": "node ./server/app.js"
   },
   "dependencies": {
@@ -72,7 +82,12 @@
     "codelyzer": "~2.0.0-beta.1",
     "css-loader": "^0.28.1",
     "cssnano": "^3.10.0",
+    "electron-builder": "^19.43.4",
+    "electron-debug": "^1.4.0",
+    "electron-packager": "^9.1.0",
+    "electron-prebuilt": "^1.4.13",
     "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.10.0",
     "istanbul-instrumenter-loader": "^2.0.0",
     "jasmine-core": "2.5.2",
@@ -107,6 +122,9 @@
     "typescript": "^2.6.0-dev.20170923",
     "url-loader": "^0.5.7",
     "webpack": "~2.4.0",
-    "webpack-dev-server": "~2.4.5"
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dashboard": "^1.0.0",
+    "webpack-dev-server": "~2.4.5",
+    "webpack-md5-hash": "0.0.5"
   }
 }

@@ -2,7 +2,7 @@
 
 Mini Starter Kit for complex web apps.
 
-* Version 0.5.2
+* Version 1.0.0
 
 ## Prerequisites and Main Libraries
 

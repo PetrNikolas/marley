@@ -1,9 +1,15 @@
+//------------------------------------------------------------------------------
+// Import Angular libs
+//------------------------------------------------------------------------------
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-// Container
+
+//------------------------------------------------------------------------------
+// Import pages
+//------------------------------------------------------------------------------
 import { WelcomeComponent } from './pages/welcome.component';
 
 @NgModule({

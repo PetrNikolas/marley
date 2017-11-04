@@ -1,13 +1,22 @@
+//------------------------------------------------------------------------------
+// Import Angular libs
+//------------------------------------------------------------------------------
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-// Container
+
+//------------------------------------------------------------------------------
+// Import pages
+//------------------------------------------------------------------------------
 import { ContactComponent } from './pages/contact.component';
 
-// Routings
+
+//------------------------------------------------------------------------------
+// Import Routings
+//------------------------------------------------------------------------------
 import { routing } from './contact.routes';
 
 @NgModule({

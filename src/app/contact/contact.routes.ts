@@ -1,11 +1,19 @@
-// Imports
+//------------------------------------------------------------------------------
+// Import Angular libs
+//------------------------------------------------------------------------------
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// Container
+
+//------------------------------------------------------------------------------
+// Import pages
+//------------------------------------------------------------------------------
 import { ContactComponent } from './pages/contact.component';
 
+
+//------------------------------------------------------------------------------
 // Route Configuration
+//------------------------------------------------------------------------------
 export const routes: Routes = [
   { path: 'contact', component: ContactComponent }
 ];

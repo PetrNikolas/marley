@@ -1,16 +1,35 @@
 'use strict';
+
+
+//------------------------------------------------------------------------------
+// Import server libs
+//------------------------------------------------------------------------------
 const koa = require('koa');
-const router = require('./routes/index');
 const staticServe = require('koa-static');
 const bodyParser = require('koa-bodyparser');
+
+
+//------------------------------------------------------------------------------
+// Import server routes
+//------------------------------------------------------------------------------
+const router = require('./routes/index');
+
+
+//------------------------------------------------------------------------------
+// Import server config
+//------------------------------------------------------------------------------
 const config = require('./config');
 
+
+//------------------------------------------------------------------------------
 // Defined new Koa app
+//------------------------------------------------------------------------------
 const app = new koa();
 
-/*
-* If an incoming request uses a protocol other than HTTPS, redirect that request to the same url but with HTTPS
-*/
+
+//------------------------------------------------------------------------------
+// If an incoming request uses a protocol other than HTTPS, redirect that request to the same url but with HTTPS
+//------------------------------------------------------------------------------
 //const forceSSL = function() {
   //return function (req, res, next) {
     //if (req.headers['x-forwarded-proto'] !== 'https') {
@@ -24,15 +43,27 @@ const app = new koa();
 // Instruct the app to use the forceSSL middleware
 //app.use(forceSSL());
 
+
+//------------------------------------------------------------------------------
 // Run the app by serving the static files
+//------------------------------------------------------------------------------
 app.use(staticServe(config.staticPath));
 
+
+//------------------------------------------------------------------------------
 // Usage body parser
+//------------------------------------------------------------------------------
 app.use(bodyParser());
 
+
+//------------------------------------------------------------------------------
 // Get all routes from ./config.js file
+//------------------------------------------------------------------------------
 app.use(router.routes());
 
+
+//------------------------------------------------------------------------------
 // Start the app by listening on the default
+//------------------------------------------------------------------------------
 app.listen(config.port);
 console.log(`Listening on port ${config.port}`);
