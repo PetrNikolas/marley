@@ -1,11 +1,9 @@
 # Marley
-
 Mini Starter Kit for complex web apps.
 
-* Version 0.6.1
+* Version 0.6.2
 
 ## Prerequisites and Main Libraries
-
 * [Angular](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
@@ -17,34 +15,23 @@ Mini Starter Kit for complex web apps.
 * [Animate.css](https://github.com/daneden/animate.css).
 
 ## Project Setup
-
 1. Clone this repo.
 2. Run `npm install` to install dependencies.
 
 ## Web Development
-
 ### Development build and serve with live reload
 1. Run `npm run serve` to build the project for development and serve.
 2. Visit http://localhost:4200/. That's it!.
 
-### Build for development
-
-1. Run `npm run serve:dev` to build the project for development.
-2. Visit http://localhost:3000/.
-
 ### Build for production
-
 1. Run `npm run serve:prod` to build the project for production.
 2. Visit http://localhost:3000/.
 
 ## Desktop Development
-
 ### Desktop development build
-
 1. Run `npm run serve:electron`.
 
 ### Desktop production build
-
 #### For MacOS 
 1. Run `npm run package`.
 
@@ -65,13 +52,7 @@ Mini Starter Kit for complex web apps.
 2. Before running the tests make sure you are serving the app via `npm run dev`.
 
 ## Lint
-
 1. Run `npm run lint`.
 
 ## Analyze your bundle
-
 1. Run `npm run analyzer` and visit http://localhost:8888/.
-
-## Webpack dashboard
-
-1. Run `npm run webpack-dashboard` and visit webpack dashboard output in terminal.

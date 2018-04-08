@@ -8,16 +8,16 @@ import { Routes, RouterModule } from '@angular/router';
 // ------------------------------------------------------------------------------
 // Import Modules
 // ------------------------------------------------------------------------------
-import { WelcomeComponent } from './welcome/pages/welcome.component';
-import { ContactComponent } from './contact/pages/contact.component';
+import { WelcomeComponent } from './features/welcome/pages/welcome.component';
+import { ContactComponent } from './features/contact/pages/contact.component';
 
 
 // ------------------------------------------------------------------------------
 // Route Configuration
 // ------------------------------------------------------------------------------
-export const routes: Routes = [
+export const ROUTES: Routes = [
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
-  { path: 'contact', loadChildren: './contact/contact.module#ContactModule' }
+  { path: 'contact', loadChildren: './features/contact/contact.module#ContactModule' }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);

@@ -8,34 +8,36 @@ import { NgModule } from '@angular/core';
 // ------------------------------------------------------------------------------
 // Import Modules
 // ------------------------------------------------------------------------------
-import { WelcomeModule } from './welcome/welcome.module';
-import { ContactModule } from './contact/contact.module';
+import { CoreModule } from './core/core.module';
+import { StaticModule } from './static/static.module';
+import { SharedModule } from './shared/shared.module';
+import { WelcomeModule } from './features/welcome/welcome.module';
+import { ContactModule } from './features/contact/contact.module';
 
 
 // ------------------------------------------------------------------------------
 // Import Routings
 // ------------------------------------------------------------------------------
-import { routing } from './app.routes';
+import { ROUTING } from './app.routing';
 
 
 // ------------------------------------------------------------------------------
 // Import Components
 // ------------------------------------------------------------------------------
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared-components/header/header.component';
-import { FooterComponent } from './shared-components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    ROUTING,
+    StaticModule,
+    SharedModule,
+    CoreModule,
     WelcomeModule,
-    ContactModule,
-    routing
+    ContactModule
   ],
   bootstrap: [AppComponent]
 })

@@ -16,5 +16,10 @@
       "es2016",
       "dom"
     ]
-  }
+  },
+  "files": [
+      "src/polyfills.ts",
+      "src/app/app.module.ts",
+      "src/main.ts"
+  ]
 }
