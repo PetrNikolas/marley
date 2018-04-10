@@ -1,7 +1,7 @@
 # Marley
 Mini Starter Kit for complex web apps.
 
-* Version 0.6.2
+* Version 0.6.3
 
 ## Prerequisites and Main Libraries
 * [Angular](https://angular.io/),
@@ -26,20 +26,6 @@ Mini Starter Kit for complex web apps.
 ### Build for production
 1. Run `npm run serve:prod` to build the project for production.
 2. Visit http://localhost:3000/.
-
-## Desktop Development
-### Desktop development build
-1. Run `npm run serve:electron`.
-
-### Desktop production build
-#### For MacOS 
-1. Run `npm run package`.
-
-#### For Windows
-1. Run `npm run package:windows` or `package:windows:x64`.
-
-#### For Linux
-1. Run `npm run package:linux`.
 
 ## Code scaffolding
 1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.

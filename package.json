@@ -1,6 +1,6 @@
 {
   "name": "marley",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "license": "MIT",
   "angular-cli": {},
   "engines": {
@@ -17,14 +17,8 @@
     "build": "ng build --env=prod --build-optimizer=true --aot",
     "build:dev": "ng build",
     "build:prod": "ng build --target production --aot --build-optimizer --vendor-chunk",
-    "build:desktop": "node --max_old_space_size=8192 ./node_modules/webpack/bin/webpack.js --config ./tasks/desktop.config.js",
-    "package": "electron-packager ./desktop \"Marley\" --platform=darwin --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c)\" --icon=assets/icon.png --out=./desktop/releases/mac --overwrite",
-    "package:linux": "electron-packager ./desktop \"Marley\" --platform=linux --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c)\" --icon=assets/icon.png --out=./desktop/releases/linux --overwrite",
-    "package:windows": "electron-packager ./desktop \"Marley\" --platform=win32 --arch=ia32 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c)\" --icon=assets/icon.png --out=./desktop/releases/windows --overwrite --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Spaceti Superadmin\"",
-    "package:windows:x64": "electron-packager ./desktop \"Marley\" --platform=win32 --arch=x64 --version=2.0.0 --prune=true --app-copyright=\"Copyright (c)\" --icon=assets/icon.png --out=./desktop/releases/windows --overwrite --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Spaceti Superadmin\"",
     "serve": "ng serve",
     "serve:prod": "npm run build:prod && npm start",
-    "serve:electron": "npm run build:prod && npm run build:desktop && NODE_ENV=development electron main",
     "start": "node ./server/app.js"
   },
   "dependencies": {
@@ -80,10 +74,6 @@
     "codelyzer": "~2.0.0-beta.1",
     "css-loader": "^0.28.1",
     "cssnano": "^3.10.0",
-    "electron-builder": "^19.43.4",
-    "electron-debug": "^1.4.0",
-    "electron-packager": "^9.1.0",
-    "electron-prebuilt": "^1.4.13",
     "exports-loader": "^0.6.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^0.10.0",
