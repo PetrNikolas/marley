@@ -7,12 +7,9 @@ Mini Starter Kit for complex web apps.
 * [Angular](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
 * [Node.js](https://nodejs.org/en/),
-* [koa.js](http://koajs.com/),
-* [Webpack](https://webpack.js.org/),
-* [Rollup.js](https://rollupjs.org/),
+* [express.js](https://expressjs.com/),
 * [Bulma](http://bulma.io/),
-* [Sass](http://sass-lang.com/),
-* [Animate.css](https://github.com/daneden/animate.css).
+* [Sass](http://sass-lang.com/).
 
 ## Project Setup
 1. Clone this repo.
@@ -25,7 +22,7 @@ Mini Starter Kit for complex web apps.
 
 ### Build for production
 1. Run `npm run serve:prod` to build the project for production.
-2. Visit http://localhost:3000/.
+2. Visit http://localhost:8080/.
 
 ## Code scaffolding
 1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
@@ -39,6 +36,3 @@ Mini Starter Kit for complex web apps.
 
 ## Lint
 1. Run `npm run lint`.
-
-## Analyze your bundle
-1. Run `npm run analyzer` and visit http://localhost:8888/.

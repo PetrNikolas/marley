@@ -1,11 +1,15 @@
 /* Header Styles */
 
-.nav {
+.navbar-menu {
     a,
     span {
         border-bottom: none !important;
     }
     .is-brand {
         font-size: 30px;
+    }
+    .navbar-item {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }

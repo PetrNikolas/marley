@@ -30,22 +30,10 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
-package-lock.json
+yarn-error.log
 testem.log
 /typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store
 Thumbs.db
-
-# Desktop Builds
-desktop/releases
-desktop/dist/inline.bundle.js
-desktop/dist/main.bundle.js
-desktop/dist/polyfills.bundle.js
-desktop/dist/styles.bundle.js
-desktop/dist/vendor.bundle.js
