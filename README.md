@@ -1,5 +1,4 @@
 # Marley
-Mini Starter Kit for complex web apps.
 
 * Version 0.7.0
 
