@@ -2,6 +2,8 @@
 
 * Version 0.7.1
 
+* [Demo](https://marleyapp.herokuapp.com/)
+
 ## Prerequisites and Main Libraries
 * [Angular](https://angular.io/),
 * [Angular-cli](https://github.com/angular/angular-cli),
