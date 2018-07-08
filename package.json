@@ -7,7 +7,7 @@
   },
   "private": true,
   "repository": {},
-  "description": "Mini Starter Kit for complex web apps.",
+  "description": "Modern Angular 6+ Stack.",
   "scripts": {
     "ng": "ng",
     "test": "ng test",
