@@ -7,24 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-
 // ------------------------------------------------------------------------------
 // Import pages
 // ------------------------------------------------------------------------------
 import { ContactComponent } from './pages/contact.component';
 
-
-// ------------------------------------------------------------------------------
-// Import Routings
-// ------------------------------------------------------------------------------
-import { routing } from './contact.routes';
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HttpModule,
-    routing
+    HttpModule
   ],
   declarations: [
     ContactComponent

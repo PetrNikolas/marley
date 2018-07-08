@@ -8,19 +8,9 @@ export class GlobalErrorHandler implements ErrorHandler {
   constructor() {}
 
   handleError(error) {
-    const MESSAGE = error.message ? error.message : error.toString();
-    const URL = window.location.href;
-    const ERROR_MESSAGE =
-      "URL: " +
-      URL +
-      "/ User ID: " +
-      sessionStorage.getItem("uid") +
-      "/ User role: " +
-      sessionStorage.getItem("user_role") +
-      "/ MESSAGE: " +
-      MESSAGE;
-    console.log(ERROR_MESSAGE);
-
+    const message = error.message ? error.message : error.toString();
+    const url = window.location.href;
+    console.log("URL: " + url + "/ MESSAGE: " + message);
     throw error;
   }
 }

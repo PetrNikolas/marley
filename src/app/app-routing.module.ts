@@ -15,17 +15,28 @@ import { ContactComponent } from './features/contact/pages/contact.component';
 // ------------------------------------------------------------------------------
 import { SelectivePreloadingStrategy } from "./preloading-strategy";
 
+// ------------------------------------------------------------------------------
+// Import environments
+// ------------------------------------------------------------------------------
+import { environment } from '../environments/environment';
+
 // -----------------------------------------------------------------------------
 // Route Configuration
 // ------------------------------------------------------------------------------
 const routes: Routes = [
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
-  { path: 'contact', loadChildren: 'app/features/contact/contact.module#ContactModule', data: { preload: true } }
+  { path: 'contact', component: ContactComponent, data: { preload: true } }
 ];
+
+// -----------------------------------------------------------------------------
+// Tracing Configuration
+// ------------------------------------------------------------------------------
+let enableTracing = false;
+if (!environment.production) enableTracing = true;
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes, {
-    enableTracing: true, // <-- debugging purposes only
+    enableTracing: enableTracing,
     preloadingStrategy: SelectivePreloadingStrategy,
   })],
   providers: [
