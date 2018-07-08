@@ -21,6 +21,11 @@ import { ContactModule } from './features/contact/contact.module';
 import { AppRoutingModule }     from './app-routing.module';
 
 // ------------------------------------------------------------------------------
+// Import global error handling
+// ------------------------------------------------------------------------------
+import { GlobalErrorHandler }     from './global-error-handler';
+
+// ------------------------------------------------------------------------------
 // Import Components
 // ------------------------------------------------------------------------------
 import { AppComponent } from './app.component';
@@ -51,6 +56,7 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent
   ],
+  providers: [ GlobalErrorHandler ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {

@@ -4,6 +4,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
+// ------------------------------------------------------------------------------
+// Import custom preload strategy
+// ------------------------------------------------------------------------------
+import { SelectivePreloadingStrategy } from '../../../preloading-strategy';
+
 @Component({
   selector: 'app-contact',
   templateUrl: 'contact.component.html',
@@ -11,8 +16,11 @@ import { Meta, Title } from '@angular/platform-browser';
   providers: []
 })
 export class ContactComponent implements OnInit {
+  modules: string[];
 
-  constructor(meta: Meta, title: Title) {
+  constructor(meta: Meta, title: Title, private preloadStrategy: SelectivePreloadingStrategy) {
+    this.modules = preloadStrategy.preloadedModules;
+
     // Sets the <title></title>
     title.setTitle('Contact');
 
