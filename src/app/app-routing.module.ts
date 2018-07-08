@@ -1,23 +1,25 @@
 // ------------------------------------------------------------------------------
 // Import Angular libs
 // ------------------------------------------------------------------------------
-import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { NgModule }             from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 // ------------------------------------------------------------------------------
-// Import Modules
+// Import components/pages
 // ------------------------------------------------------------------------------
 import { WelcomeComponent } from './features/welcome/pages/welcome.component';
 import { ContactComponent } from './features/contact/pages/contact.component';
 
-
 // ------------------------------------------------------------------------------
 // Route Configuration
 // ------------------------------------------------------------------------------
-export const ROUTES: Routes = [
+const routes: Routes = [
   { path: '', component: WelcomeComponent, pathMatch: 'full' },
   { path: 'contact', loadChildren: './features/contact/contact.module#ContactModule' }
 ];
 
-export const ROUTING: ModuleWithProviders = RouterModule.forRoot(ROUTES);
+@NgModule({
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
+})
+export class AppRoutingModule {}
