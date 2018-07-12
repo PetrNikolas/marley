@@ -1,9 +1,10 @@
 // ------------------------------------------------------------------------------
 // Import Angular libs
 // ------------------------------------------------------------------------------
-import { ErrorHandler, forwardRef, Inject } from "@angular/core";
+import { ErrorHandler, Injectable, forwardRef, Inject } from "@angular/core";
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 
+@Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
   constructor() {}
 
