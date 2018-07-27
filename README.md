@@ -1,21 +1,21 @@
 # Marley
 
-* Version 0.7.1
+* Version 0.7.2
 
 * [Demo](https://marleyapp.herokuapp.com/)
 
 ## Prerequisites and Main Libraries
-* [Angular](https://angular.io/),
-* [Angular-cli](https://github.com/angular/angular-cli),
-* [Angular Universal](https://universal.angular.io/),
-* [Node.js](https://nodejs.org/en/),
-* [express.js](https://expressjs.com/),
-* [Bulma](http://bulma.io/),
-* [Sass](http://sass-lang.com/).
+* [Angular](https://angular.io/)
+* [Angular-cli](https://github.com/angular/angular-cli)
+* [Angular Universal](https://universal.angular.io/)
+* [Node.js](https://nodejs.org/en/)
+* [express.js](https://expressjs.com/)
+* [Bulma](http://bulma.io/)
+* [Sass](http://sass-lang.com/)
 
 ## Project Setup
 1. Clone this repo.
-2. Run `yarn setup-project` to install dependencies, build project and start serve.
+2. Run `yarn setup:project` to install dependencies, build project and start serve.
 
 ## Web Development
 ### Development build and serve with live reload
@@ -40,3 +40,6 @@
 
 ## Lint
 1. Run `yarn lint`.
+
+## Gitlab CI
+* In `.ci` folder are two prepared files for Heroku and AWS deploy. You can choose one of these.

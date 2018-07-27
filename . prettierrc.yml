@@ -1,0 +1,16 @@
+parser:
+  - typescript
+singleQuote:
+  - false
+printWidth:
+  - 120
+useTabs:
+  - false
+tabWidth:
+  - 7
+semi:
+  - true
+bracketSpacing:
+  - true
+trailingComma:
+  - "es5"

@@ -1,0 +1,17 @@
+stages:
+  - deploy
+deploy:production:
+ image: "${Your image}" 
+ variables:
+   AWS_ACCESS_KEY_ID: "${Your AWS ACCESS KEY ID}"                         
+   AWS_SECRET_ACCESS_KEY: "${Your AWS Secret Access Key}"
+   AWS_DEFAULT_REGION: "${Your AWS Default Region}"                                
+   AWS_S3_BUCKET: "${Your bucket}"
+ stage: deploy
+ script:
+    - ls -r .
+    - aws configure set preview.cloudfront true
+    - aws s3 rm s3://$AWS_S3_BUCKET --recursive
+    - aws s3 sync ./dist/ s3://$AWS_S3_BUCKET --acl="public-read" --cache-control public,max-age=600,no-transform
+ only:
+   - master

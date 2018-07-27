@@ -1,49 +1,49 @@
 // ------------------------------------------------------------------------------
 // Import Angular libs
 // ------------------------------------------------------------------------------
-import { NgModule, ErrorHandler }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
-import { HttpClientModule }    from '@angular/common/http';
+import { NgModule, ErrorHandler } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 // ------------------------------------------------------------------------------
 // Import Modules
 // ------------------------------------------------------------------------------
-import { CoreModule } from './core/core.module';
-import { StaticModule } from './static/static.module';
-import { SharedModule } from './shared/shared.module';
-import { WelcomeModule } from './features/welcome/welcome.module';
-import { ContactModule } from './features/contact/contact.module';
+import { CoreModule } from "./core/core.module";
+import { StaticModule } from "./static/static.module";
+import { SharedModule } from "./shared/shared.module";
+import { WelcomeModule } from "./features/welcome/welcome.module";
+import { ContactModule } from "./features/contact/contact.module";
 
 // ------------------------------------------------------------------------------
 // Import Routings
 // ------------------------------------------------------------------------------
-import { AppRoutingModule }     from './app-routing.module';
+import { AppRoutingModule } from "./app-routing.module";
 
 // ------------------------------------------------------------------------------
 // Import global error handling
 // ------------------------------------------------------------------------------
-import { GlobalErrorHandler }     from './global-error-handler';
+import { GlobalErrorHandler } from "./global-error-handler";
 
 // ------------------------------------------------------------------------------
 // Import Components
 // ------------------------------------------------------------------------------
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 // ------------------------------------------------------------------------------
 // Import SSR components
 // ------------------------------------------------------------------------------
-import { PLATFORM_ID, APP_ID, Inject } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { PLATFORM_ID, APP_ID, Inject } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
 
 // ------------------------------------------------------------------------------
 // Import environments
 // ------------------------------------------------------------------------------
-import { environment } from '../environments/environment';
+import { environment } from "../environments/environment";
 
 @NgModule({
   imports: [
-    BrowserModule.withServerTransition({ appId: 'marleyapp' }),
+    BrowserModule.withServerTransition({ appId: "marleyapp" }),
     FormsModule,
     AppRoutingModule,
     StaticModule,
@@ -53,19 +53,20 @@ import { environment } from '../environments/environment';
     ContactModule,
     HttpClientModule
   ],
-  declarations: [
-    AppComponent
-  ],
-  providers: [ { provide: ErrorHandler, useClass: GlobalErrorHandler } ],
-  bootstrap: [ AppComponent ]
+  declarations: [AppComponent],
+  providers: [{ provide: ErrorHandler, useClass: GlobalErrorHandler }],
+  bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
-    @Inject(APP_ID) private appId: string) {
-      if (!environment.production) {
-        const platform = isPlatformBrowser(platformId) ? 'in the browser' : 'on the server';
-        console.log(`Running ${platform} with appId=${appId}`);
-      }
+    @Inject(APP_ID) private appId: string
+  ) {
+    if (!environment.production) {
+      const platform = isPlatformBrowser(platformId)
+        ? "in the browser"
+        : "on the server";
+      console.log(`Running ${platform} with appId=${appId}`);
+    }
   }
 }

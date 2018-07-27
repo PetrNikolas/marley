@@ -130,8 +130,8 @@ exports.ɵ0 = ɵ0;
 // Route Configuration
 // ------------------------------------------------------------------------------
 var routes = [
-    { path: '', component: welcome_component_1.WelcomeComponent, pathMatch: 'full' },
-    { path: 'contact', component: contact_component_1.ContactComponent, data: ɵ0 }
+    { path: "", component: welcome_component_1.WelcomeComponent, pathMatch: "full" },
+    { path: "contact", component: contact_component_1.ContactComponent, data: ɵ0 }
 ];
 // -----------------------------------------------------------------------------
 // Tracing Configuration
@@ -248,7 +248,9 @@ var AppModule = /** @class */ (function () {
         this.platformId = platformId;
         this.appId = appId;
         if (!environment_1.environment.production) {
-            var platform = common_1.isPlatformBrowser(platformId) ? 'in the browser' : 'on the server';
+            var platform = common_1.isPlatformBrowser(platformId)
+                ? "in the browser"
+                : "on the server";
             console.log("Running " + platform + " with appId=" + appId);
         }
     }
@@ -344,7 +346,7 @@ var CoreModule = /** @class */ (function () {
     /* Make sure CoreModule is imported only by one NgModule the AppModule */
     function CoreModule(parentModule) {
         if (parentModule) {
-            throw new Error('CoreModule is already loaded. Import only in AppModule');
+            throw new Error("CoreModule is already loaded. Import only in AppModule");
         }
     }
     return CoreModule;
@@ -454,15 +456,14 @@ var ContactComponent = /** @class */ (function () {
         this.preloadStrategy = preloadStrategy;
         this.modules = preloadStrategy.preloadedModules;
         // Sets the <title></title>
-        title.setTitle('Contact');
+        title.setTitle("Contact");
         // Sets the <meta> tag for the page
         meta.addTags([
-            { name: 'author', content: 'Petr Nikolas' },
-            { name: 'description', content: 'This is a contact page.' },
+            { name: "author", content: "Petr Nikolas" },
+            { name: "description", content: "This is a contact page." }
         ]);
     }
-    ContactComponent.prototype.ngOnInit = function () {
-    };
+    ContactComponent.prototype.ngOnInit = function () { };
     return ContactComponent;
 }());
 exports.ContactComponent = ContactComponent;
@@ -493,7 +494,7 @@ var i3 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform
 var styles_WelcomeComponent = [i0.styles];
 var RenderType_WelcomeComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_WelcomeComponent, data: {} });
 exports.RenderType_WelcomeComponent = RenderType_WelcomeComponent;
-function View_WelcomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 9, "section", [["class", "hero is-fullheight has-text-centered"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 8, "div", [["class", "hero-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 7, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "h1", [["class", "title is-1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Marley!"])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h2", [["class", "title is-2"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Modern Angular 6+ Stack."])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "a", [["class", "button is-primary is-medium"], ["href", "https://github.com/PetrNikolas/marley"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Download!"]))], null, null); }
+function View_WelcomeComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 9, "section", [["class", "hero is-fullheight has-text-centered"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 8, "div", [["class", "hero-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 7, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "h1", [["class", "title is-1"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Marley.js!"])), (_l()(), i1.ɵeld(6, 0, null, null, 1, "h2", [["class", "title is-2"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Modern Angular 6+ Stack."])), (_l()(), i1.ɵeld(8, 0, null, null, 1, "a", [["class", "button is-primary is-medium"], ["href", "https://github.com/PetrNikolas/marley"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Download!"]))], null, null); }
 exports.View_WelcomeComponent_0 = View_WelcomeComponent_0;
 function View_WelcomeComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-welcome", [], null, null, null, View_WelcomeComponent_0, RenderType_WelcomeComponent)), i1.ɵdid(1, 114688, null, 0, i2.WelcomeComponent, [i3.Meta, i3.Title], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_WelcomeComponent_Host_0 = View_WelcomeComponent_Host_0;
@@ -543,15 +544,14 @@ var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@
 var WelcomeComponent = /** @class */ (function () {
     function WelcomeComponent(meta, title) {
         // Sets the <title></title>
-        title.setTitle('Home');
+        title.setTitle("Home");
         // Sets the <meta> tag for the page
         meta.addTags([
-            { name: 'author', content: 'Petr Nikolas' },
-            { name: 'description', content: 'This is a home page.' },
+            { name: "author", content: "Petr Nikolas" },
+            { name: "description", content: "This is a home page." }
         ]);
     }
-    WelcomeComponent.prototype.ngOnInit = function () {
-    };
+    WelcomeComponent.prototype.ngOnInit = function () { };
     return WelcomeComponent;
 }());
 exports.WelcomeComponent = WelcomeComponent;
@@ -628,7 +628,7 @@ var SelectivePreloadingStrategy = /** @class */ (function () {
         this.preloadedModules = [];
     }
     SelectivePreloadingStrategy.prototype.preload = function (route, load) {
-        if (route.data && route.data['preload']) {
+        if (route.data && route.data["preload"]) {
             // Add the route path to the preloaded module array
             this.preloadedModules.push(route.path);
             return load();
@@ -715,8 +715,7 @@ var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var FooterComponent = /** @class */ (function () {
     function FooterComponent() {
     }
-    FooterComponent.prototype.ngOnInit = function () {
-    };
+    FooterComponent.prototype.ngOnInit = function () { };
     return FooterComponent;
 }());
 exports.FooterComponent = FooterComponent;
@@ -751,7 +750,7 @@ exports.RenderType_HeaderComponent = RenderType_HeaderComponent;
 function View_HeaderComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 14, "div", [["class", "navbar-menu"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 4, "div", [["class", "navbar-start"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 3, "a", [["class", "navbar-item is-brand"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 3).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), i1.ɵdid(3, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(4, 1), (_l()(), i1.ɵted(-1, null, ["Marley"])), (_l()(), i1.ɵeld(6, 0, null, null, 8, "div", [["class", "navbar-end"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 7, "a", [["class", "navbar-item"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
+    } return ad; }, null, null)), i1.ɵdid(3, 671744, null, 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(4, 1), (_l()(), i1.ɵted(-1, null, ["Marley.js"])), (_l()(), i1.ɵeld(6, 0, null, null, 8, "div", [["class", "navbar-end"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 7, "a", [["class", "navbar-item"]], [[1, "target", 0], [8, "href", 4]], [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (i1.ɵnov(_v, 8).onClick($event.button, $event.ctrlKey, $event.metaKey, $event.shiftKey) !== false);
         ad = (pd_0 && ad);
     } return ad; }, null, null)), i1.ɵdid(8, 671744, [[2, 4]], 0, i2.RouterLinkWithHref, [i2.Router, i2.ActivatedRoute, i3.LocationStrategy], { routerLink: [0, "routerLink"] }, null), i1.ɵpad(9, 1), i1.ɵdid(10, 1720320, null, 2, i2.RouterLinkActive, [i2.Router, i1.ElementRef, i1.Renderer2, i1.ChangeDetectorRef], { routerLinkActive: [0, "routerLinkActive"] }, null), i1.ɵqud(603979776, 1, { links: 1 }), i1.ɵqud(603979776, 2, { linksWithHrefs: 1 }), i1.ɵpad(13, 1), (_l()(), i1.ɵted(-1, null, ["Contact"]))], function (_ck, _v) { var currVal_2 = _ck(_v, 4, 0, "/"); _ck(_v, 3, 0, currVal_2); var currVal_5 = _ck(_v, 9, 0, "/contact"); _ck(_v, 8, 0, currVal_5); var currVal_6 = _ck(_v, 13, 0, "is-active"); _ck(_v, 10, 0, currVal_6); }, function (_ck, _v) { var currVal_0 = i1.ɵnov(_v, 3).target; var currVal_1 = i1.ɵnov(_v, 3).href; _ck(_v, 2, 0, currVal_0, currVal_1); var currVal_3 = i1.ɵnov(_v, 8).target; var currVal_4 = i1.ɵnov(_v, 8).href; _ck(_v, 7, 0, currVal_3, currVal_4); }); }
@@ -803,8 +802,7 @@ var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var HeaderComponent = /** @class */ (function () {
     function HeaderComponent() {
     }
-    HeaderComponent.prototype.ngOnInit = function () {
-    };
+    HeaderComponent.prototype.ngOnInit = function () { };
     return HeaderComponent;
 }());
 exports.HeaderComponent = HeaderComponent;
