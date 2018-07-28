@@ -10,7 +10,6 @@ import { HttpClientModule } from "@angular/common/http";
 // Import Modules
 // ------------------------------------------------------------------------------
 import { CoreModule } from "./core/core.module";
-import { StaticModule } from "./static/static.module";
 import { SharedModule } from "./shared/shared.module";
 import { WelcomeModule } from "./features/welcome/welcome.module";
 import { ContactModule } from "./features/contact/contact.module";
@@ -46,7 +45,6 @@ import { environment } from "../environments/environment";
     BrowserModule.withServerTransition({ appId: "marleyapp" }),
     FormsModule,
     AppRoutingModule,
-    StaticModule,
     SharedModule,
     CoreModule,
     WelcomeModule,

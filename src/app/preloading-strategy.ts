@@ -13,13 +13,7 @@ import { Observable, of } from "rxjs";
 export class SelectivePreloadingStrategy implements PreloadingStrategy {
   preloadedModules: string[] = [];
 
-  preload(route: Route, load: () => Observable<any>): Observable<any> {
-    if (route.data && route.data["preload"]) {
-      // Add the route path to the preloaded module array
-      this.preloadedModules.push(route.path);
-      return load();
-    } else {
-      return of(null);
-    }
+  preload(route: Route, load: Function): Observable<any> {
+    return route.data && route.data.preload ? load() : of(null);
   }
 }

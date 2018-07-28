@@ -28,16 +28,10 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent, data: { preload: true } }
 ];
 
-// -----------------------------------------------------------------------------
-// Tracing Configuration
-// ------------------------------------------------------------------------------
-let enableTracing = false;
-if (!environment.production) enableTracing = true;
-
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      enableTracing: enableTracing,
+      enableTracing: environment.production ? false : true,
       preloadingStrategy: SelectivePreloadingStrategy
     })
   ],

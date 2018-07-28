@@ -1,6 +1,6 @@
 {
   "name": "marleyjs",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "engines": {
     "node": ">=8.9.0",
     "npm": ">05.0.3"
