@@ -28,6 +28,7 @@
               }
             ],
             "styles": [
+              "./node_modules/normalize.css/normalize.css",
               "./node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],
@@ -79,6 +80,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
             "styles": [
+              "./node_modules/normalize.css/normalize.css",
               "./node_modules/bulma/css/bulma.css",
               "src/styles.scss"
             ],

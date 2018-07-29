@@ -1,0 +1,923 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Marley.js documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/postmark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">Marley.js documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">Marley.js documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#xs-modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="xs-modules-links"
+                >
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppModule-176ea513e9a29036e7fcabe334bd0e98"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppModule-176ea513e9a29036e7fcabe334bd0e98"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/AppRoutingModule.html" data-type="entity-link">AppRoutingModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-injectables-links-module-AppRoutingModule-be25c176d0376cf0ac3ed54e62e52a06"
+                                    >
+                                    <span class="fa fa-fw fa-long-arrow-down"></span>
+                                    <span>Injectables</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-injectables-links-module-AppRoutingModule-be25c176d0376cf0ac3ed54e62e52a06"
+                                    >
+                                        <li class="link">
+                                            <a href="injectables/SelectivePreloadingStrategy.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules"}>SelectivePreloadingStrategy</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/AppServerModule.html" data-type="entity-link">AppServerModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppServerModule-2c9d88dcfe8543cbf48a451cde6ba464"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppServerModule-2c9d88dcfe8543cbf48a451cde6ba464"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/ContactModule.html" data-type="entity-link">ContactModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-ContactModule-180bb014b264d4d22bc2160de0e34994"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-ContactModule-180bb014b264d4d22bc2160de0e34994"
+                                    >
+                                        <li class="link">
+                                            <a href="components/ContactComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ContactComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/CoreModule.html" data-type="entity-link">CoreModule</a>
+                    </li>
+                    <li class="link">
+                        <a href="modules/SharedModule.html" data-type="entity-link">SharedModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-SharedModule-6235ff470c5b323c1110b1dc613216a8"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-SharedModule-6235ff470c5b323c1110b1dc613216a8"
+                                    >
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/HeaderComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HeaderComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/WelcomeModule.html" data-type="entity-link">WelcomeModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-WelcomeModule-d22cec9813b70ece3cd5f6ba5d3bbfbf"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-WelcomeModule-d22cec9813b70ece3cd5f6ba5d3bbfbf"
+                                    >
+                                        <li class="link">
+                                            <a href="components/WelcomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">WelcomeComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+                <li class="chapter">
+                    <div class="simple menu-toggler" data-toggle="collapse"
+                            data-target="#xs-injectables-links"
+                        >
+                        <span class="fa fa-fw fa-long-arrow-down"></span>
+                        <span>Injectables</span>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                    <ul class="links collapse"
+                            id="xs-injectables-links"
+                        >
+                            <li class="link">
+                                <a href="injectables/GlobalErrorHandler.html" data-type="entity-link">GlobalErrorHandler</a>
+                            </li>
+                            <li class="link">
+                                <a href="injectables/SelectivePreloadingStrategy.html" data-type="entity-link">SelectivePreloadingStrategy</a>
+                            </li>
+                    </ul>
+                </li>
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-interfaces-links"
+                >
+                <span class="fa fa-fw fa-info"></span>
+                <span>Interfaces</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-interfaces-links"
+                >
+                    <li class="link">
+                        <a href="interfaces/Person.html" data-type="entity-link">Person</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-miscellaneous-links"
+                >
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-miscellaneous-links"
+                >
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise-inverted.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">Marley.js documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="modules-links"
+>
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppModule-176ea513e9a29036e7fcabe334bd0e98"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppModule-176ea513e9a29036e7fcabe334bd0e98"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/AppRoutingModule.html" data-type="entity-link">AppRoutingModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#injectables-links-module-AppRoutingModule-be25c176d0376cf0ac3ed54e62e52a06"
+>
+                                    <span class="fa fa-fw fa-long-arrow-down"></span>
+                                    <span>Injectables</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="injectables-links-module-AppRoutingModule-be25c176d0376cf0ac3ed54e62e52a06"
+>
+                                        <li class="link">
+                                            <a href="injectables/SelectivePreloadingStrategy.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules"}>SelectivePreloadingStrategy</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/AppServerModule.html" data-type="entity-link">AppServerModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppServerModule-2c9d88dcfe8543cbf48a451cde6ba464"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppServerModule-2c9d88dcfe8543cbf48a451cde6ba464"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/ContactModule.html" data-type="entity-link">ContactModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-ContactModule-180bb014b264d4d22bc2160de0e34994"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-ContactModule-180bb014b264d4d22bc2160de0e34994"
+>
+                                        <li class="link">
+                                            <a href="components/ContactComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ContactComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/CoreModule.html" data-type="entity-link">CoreModule</a>
+                    </li>
+                    <li class="link">
+                        <a href="modules/SharedModule.html" data-type="entity-link">SharedModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-SharedModule-6235ff470c5b323c1110b1dc613216a8"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-SharedModule-6235ff470c5b323c1110b1dc613216a8"
+>
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/HeaderComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HeaderComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+                    <li class="link">
+                        <a href="modules/WelcomeModule.html" data-type="entity-link">WelcomeModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-WelcomeModule-d22cec9813b70ece3cd5f6ba5d3bbfbf"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-WelcomeModule-d22cec9813b70ece3cd5f6ba5d3bbfbf"
+>
+                                        <li class="link">
+                                            <a href="components/WelcomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">WelcomeComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+                <li class="chapter">
+                    <div class="simple menu-toggler" data-toggle="collapse"
+                            data-target="#injectables-links"
+>
+                        <span class="fa fa-fw fa-long-arrow-down"></span>
+                        <span>Injectables</span>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                    <ul class="links collapse"
+                            id="injectables-links"
+>
+                            <li class="link">
+                                <a href="injectables/GlobalErrorHandler.html" data-type="entity-link">GlobalErrorHandler</a>
+                            </li>
+                            <li class="link">
+                                <a href="injectables/SelectivePreloadingStrategy.html" data-type="entity-link">SelectivePreloadingStrategy</a>
+                            </li>
+                    </ul>
+                </li>
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#interfaces-links"
+>
+                <span class="fa fa-fw fa-info"></span>
+                <span>Interfaces</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="interfaces-links"
+>
+                    <li class="link">
+                        <a href="interfaces/Person.html" data-type="entity-link">Person</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#miscellaneous-links"
+>
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="miscellaneous-links"
+>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise-inverted.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content overview">
+                   <div class="content-data">
+
+
+<ol class="breadcrumb">
+    <li>Overview</li>
+</ol>
+            <div class="text-center module-graph-container">
+                <div id="module-graph-svg">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="1519pt" height="366pt"
+ viewBox="0.00 0.00 1519.00 366.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 362)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-362 1515,-362 1515,4 -4,4"/>
+<text text-anchor="start" x="734.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="521.5,-10 521.5,-30 541.5,-30 541.5,-10 521.5,-10"/>
+<text text-anchor="start" x="545.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="634.5,-10 634.5,-30 654.5,-30 654.5,-10 634.5,-10"/>
+<text text-anchor="start" x="658.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="720.5,-10 720.5,-30 740.5,-30 740.5,-10 720.5,-10"/>
+<text text-anchor="start" x="744.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="817.5,-10 817.5,-30 837.5,-30 837.5,-10 817.5,-10"/>
+<text text-anchor="start" x="841.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="913.5,-10 913.5,-30 933.5,-30 933.5,-10 913.5,-10"/>
+<text text-anchor="start" x="937.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_AppModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="152,-146 152,-350 916,-350 916,-146 152,-146"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_AppModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="160,-154 160,-206 282,-206 282,-154 160,-154"/>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_AppModule_imports</title>
+<polygon fill="none" stroke="#000000" points="290,-154 290,-206 908,-206 908,-154 290,-154"/>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_AppModule_bootstrap</title>
+<polygon fill="none" stroke="#000000" points="262,-290 262,-342 386,-342 386,-290 262,-290"/>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_AppRoutingModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="226,-70 226,-138 498,-138 498,-70 226,-70"/>
+</g>
+<g id="clust13" class="cluster">
+<title>cluster_AppRoutingModule_providers</title>
+<polygon fill="none" stroke="#000000" points="234,-78 234,-130 490,-130 490,-78 234,-78"/>
+</g>
+<g id="clust14" class="cluster">
+<title>cluster_AppServerModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-222 8,-274 144,-274 144,-222 8,-222"/>
+</g>
+<g id="clust20" class="cluster">
+<title>cluster_ContactModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="514,-70 514,-138 670,-138 670,-70 514,-70"/>
+</g>
+<g id="clust21" class="cluster">
+<title>cluster_ContactModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="522,-78 522,-130 662,-130 662,-78 522,-78"/>
+</g>
+<g id="clust33" class="cluster">
+<title>cluster_SharedModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="924,-214 924,-282 1503,-282 1503,-214 924,-214"/>
+</g>
+<g id="clust34" class="cluster">
+<title>cluster_SharedModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="1221,-222 1221,-274 1495,-274 1495,-222 1221,-222"/>
+</g>
+<g id="clust38" class="cluster">
+<title>cluster_SharedModule_exports</title>
+<polygon fill="none" stroke="#000000" points="932,-222 932,-274 1213,-274 1213,-222 932,-222"/>
+</g>
+<g id="clust41" class="cluster">
+<title>cluster_WelcomeModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="678,-70 678,-138 844,-138 844,-70 678,-70"/>
+</g>
+<g id="clust42" class="cluster">
+<title>cluster_WelcomeModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="686,-78 686,-130 836,-130 836,-78 686,-78"/>
+</g>
+<!-- AppComponent -->
+<g id="node1" class="node">
+<title>AppComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="273.9399,-198 168.0601,-198 168.0601,-162 273.9399,-162 273.9399,-198"/>
+<text text-anchor="middle" x="221" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent</text>
+</g>
+<!-- AppModule -->
+<g id="node2" class="node">
+<title>AppModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="466.6571,-266 463.6571,-270 442.6571,-270 439.6571,-266 383.3429,-266 383.3429,-230 466.6571,-230 466.6571,-266"/>
+<text text-anchor="middle" x="425" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppModule</text>
+</g>
+<!-- AppComponent&#45;&gt;AppModule -->
+<g id="edge1" class="edge">
+<title>AppComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M218.9055,-198.0336C218.9055,-215.0597 218.9055,-238 218.9055,-238 218.9055,-238 373.2937,-238 373.2937,-238"/>
+<polygon fill="#000000" stroke="#000000" points="373.2937,-241.5001 383.2937,-238 373.2937,-234.5001 373.2937,-241.5001"/>
+</g>
+<!-- AppComponent  -->
+<g id="node8" class="node">
+<title>AppComponent </title>
+<polygon fill="#80b1d3" stroke="#000000" points="378.439,-334 269.561,-334 269.561,-298 378.439,-298 378.439,-334"/>
+<text text-anchor="middle" x="324" y="-311.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent </text>
+</g>
+<!-- AppModule&#45;&gt;AppComponent  -->
+<g id="edge7" class="edge">
+<title>AppModule&#45;&gt;AppComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M383.3035,-259C360.986,-259 338.0412,-259 338.0412,-259 338.0412,-259 338.0412,-287.9648 338.0412,-287.9648"/>
+<polygon fill="#000000" stroke="#000000" points="334.5413,-287.9648 338.0412,-297.9648 341.5413,-287.9649 334.5413,-287.9648"/>
+</g>
+<!-- AppServerModule -->
+<g id="node10" class="node">
+<title>AppServerModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="136.1895,-266 133.1895,-270 112.1895,-270 109.1895,-266 15.8105,-266 15.8105,-230 136.1895,-230 136.1895,-266"/>
+<text text-anchor="middle" x="76" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppServerModule</text>
+</g>
+<!-- AppModule&#45;&gt;AppServerModule -->
+<g id="edge9" class="edge">
+<title>AppModule&#45;&gt;AppServerModule</title>
+<path fill="none" stroke="#000000" d="M383.2491,-245C383.2491,-245 146.2106,-245 146.2106,-245"/>
+<polygon fill="#000000" stroke="#000000" points="146.2106,-241.5001 136.2106,-245 146.2105,-248.5001 146.2106,-241.5001"/>
+</g>
+<!-- AppRoutingModule -->
+<g id="node3" class="node">
+<title>AppRoutingModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="426.2744,-198 423.2744,-202 402.2744,-202 399.2744,-198 297.7256,-198 297.7256,-162 426.2744,-162 426.2744,-198"/>
+<text text-anchor="middle" x="362" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppRoutingModule</text>
+</g>
+<!-- AppRoutingModule&#45;&gt;AppModule -->
+<g id="edge2" class="edge">
+<title>AppRoutingModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M404.7795,-198.2228C404.7795,-198.2228 404.7795,-219.7269 404.7795,-219.7269"/>
+<polygon fill="#000000" stroke="#000000" points="401.2795,-219.7269 404.7795,-229.7269 408.2795,-219.727 401.2795,-219.7269"/>
+</g>
+<!-- ContactModule -->
+<g id="node4" class="node">
+<title>ContactModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="652.5968,-198 649.5968,-202 628.5968,-202 625.5968,-198 549.4032,-198 549.4032,-162 652.5968,-162 652.5968,-198"/>
+<text text-anchor="middle" x="601" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">ContactModule</text>
+</g>
+<!-- ContactModule&#45;&gt;AppModule -->
+<g id="edge3" class="edge">
+<title>ContactModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M601,-198.0336C601,-215.0597 601,-238 601,-238 601,-238 476.7095,-238 476.7095,-238"/>
+<polygon fill="#000000" stroke="#000000" points="476.7096,-234.5001 466.7095,-238 476.7095,-241.5001 476.7096,-234.5001"/>
+</g>
+<!-- CoreModule -->
+<g id="node5" class="node">
+<title>CoreModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="531.2619,-198 528.2619,-202 507.2619,-202 504.2619,-198 444.7381,-198 444.7381,-162 531.2619,-162 531.2619,-198"/>
+<text text-anchor="middle" x="488" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">CoreModule</text>
+</g>
+<!-- CoreModule&#45;&gt;AppModule -->
+<g id="edge4" class="edge">
+<title>CoreModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M455.7237,-198.2228C455.7237,-198.2228 455.7237,-219.7269 455.7237,-219.7269"/>
+<polygon fill="#000000" stroke="#000000" points="452.2238,-219.7269 455.7237,-229.7269 459.2238,-219.727 452.2238,-219.7269"/>
+</g>
+<!-- SharedModule -->
+<g id="node6" class="node">
+<title>SharedModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="900.4231,-198 897.4231,-202 876.4231,-202 873.4231,-198 801.5769,-198 801.5769,-162 900.4231,-162 900.4231,-198"/>
+<text text-anchor="middle" x="851" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">SharedModule</text>
+</g>
+<!-- SharedModule&#45;&gt;AppModule -->
+<g id="edge5" class="edge">
+<title>SharedModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M834.5963,-198.1686C834.5963,-219.498 834.5963,-252 834.5963,-252 834.5963,-252 476.9091,-252 476.9091,-252"/>
+<polygon fill="#000000" stroke="#000000" points="476.9091,-248.5001 466.9091,-252 476.9091,-255.5001 476.9091,-248.5001"/>
+</g>
+<!-- FooterComponent  -->
+<g id="node14" class="node">
+<title>FooterComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1204.8814,-266 1083.1186,-266 1083.1186,-230 1204.8814,-230 1204.8814,-266"/>
+<text text-anchor="middle" x="1144" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">FooterComponent </text>
+</g>
+<!-- SharedModule&#45;&gt;FooterComponent  -->
+<g id="edge14" class="edge">
+<title>SharedModule&#45;&gt;FooterComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M900.3721,-189C983.8749,-189 1144,-189 1144,-189 1144,-189 1144,-219.9775 1144,-219.9775"/>
+<polygon fill="#000000" stroke="#000000" points="1140.5001,-219.9774 1144,-229.9775 1147.5001,-219.9775 1140.5001,-219.9774"/>
+</g>
+<!-- HeaderComponent  -->
+<g id="node15" class="node">
+<title>HeaderComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1065.7436,-266 940.2564,-266 940.2564,-230 1065.7436,-230 1065.7436,-266"/>
+<text text-anchor="middle" x="1003" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">HeaderComponent </text>
+</g>
+<!-- SharedModule&#45;&gt;HeaderComponent  -->
+<g id="edge15" class="edge">
+<title>SharedModule&#45;&gt;HeaderComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M867.4037,-198.3228C867.4037,-221.6602 867.4037,-259 867.4037,-259 867.4037,-259 930.3617,-259 930.3617,-259"/>
+<polygon fill="#000000" stroke="#000000" points="930.3618,-262.5001 940.3617,-259 930.3617,-255.5001 930.3618,-262.5001"/>
+</g>
+<!-- WelcomeModule -->
+<g id="node7" class="node">
+<title>WelcomeModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="783.6896,-198 780.6896,-202 759.6896,-202 756.6896,-198 670.3104,-198 670.3104,-162 783.6896,-162 783.6896,-198"/>
+<text text-anchor="middle" x="727" y="-175.8" font-family="Times,serif" font-size="14.00" fill="#000000">WelcomeModule</text>
+</g>
+<!-- WelcomeModule&#45;&gt;AppModule -->
+<g id="edge6" class="edge">
+<title>WelcomeModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M727,-198.1061C727,-217.3391 727,-245 727,-245 727,-245 476.6747,-245 476.6747,-245"/>
+<polygon fill="#000000" stroke="#000000" points="476.6748,-241.5001 466.6747,-245 476.6747,-248.5001 476.6748,-241.5001"/>
+</g>
+<!-- SelectivePreloadingStrategy -->
+<g id="node9" class="node">
+<title>SelectivePreloadingStrategy</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="362" cy="-104" rx="120.3994" ry="18"/>
+<text text-anchor="middle" x="362" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SelectivePreloadingStrategy</text>
+</g>
+<!-- SelectivePreloadingStrategy&#45;&gt;AppRoutingModule -->
+<g id="edge8" class="edge">
+<title>SelectivePreloadingStrategy&#45;&gt;AppRoutingModule</title>
+<path fill="none" stroke="#000000" d="M362,-122.0109C362,-122.0109 362,-151.855 362,-151.855"/>
+<polygon fill="#000000" stroke="#000000" points="358.5001,-151.8549 362,-161.855 365.5001,-151.855 358.5001,-151.8549"/>
+</g>
+<!-- AppServerModule&#45;&gt;AppComponent  -->
+<g id="edge10" class="edge">
+<title>AppServerModule&#45;&gt;AppComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M136.3629,-252C198.3024,-252 285.6662,-252 285.6662,-252 285.6662,-252 285.6662,-287.8314 285.6662,-287.8314"/>
+<polygon fill="#000000" stroke="#000000" points="282.1663,-287.8313 285.6662,-297.8314 289.1663,-287.8314 282.1663,-287.8313"/>
+</g>
+<!-- ContactComponent -->
+<g id="node11" class="node">
+<title>ContactComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="654.3795,-122 529.6205,-122 529.6205,-86 654.3795,-86 654.3795,-122"/>
+<text text-anchor="middle" x="592" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ContactComponent</text>
+</g>
+<!-- ContactComponent&#45;&gt;ContactModule -->
+<g id="edge11" class="edge">
+<title>ContactComponent&#45;&gt;ContactModule</title>
+<path fill="none" stroke="#000000" d="M601,-122.0109C601,-122.0109 601,-151.855 601,-151.855"/>
+<polygon fill="#000000" stroke="#000000" points="597.5001,-151.8549 601,-161.855 604.5001,-151.855 597.5001,-151.8549"/>
+</g>
+<!-- FooterComponent -->
+<g id="node12" class="node">
+<title>FooterComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1486.8809,-266 1369.1191,-266 1369.1191,-230 1486.8809,-230 1486.8809,-266"/>
+<text text-anchor="middle" x="1428" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">FooterComponent</text>
+</g>
+<!-- FooterComponent&#45;&gt;SharedModule -->
+<g id="edge12" class="edge">
+<title>FooterComponent&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M1428,-229.7521C1428,-206.9821 1428,-171 1428,-171 1428,-171 910.4441,-171 910.4441,-171"/>
+<polygon fill="#000000" stroke="#000000" points="910.4442,-167.5001 900.4441,-171 910.4441,-174.5001 910.4442,-167.5001"/>
+</g>
+<!-- HeaderComponent -->
+<g id="node13" class="node">
+<title>HeaderComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1350.7437,-266 1229.2563,-266 1229.2563,-230 1350.7437,-230 1350.7437,-266"/>
+<text text-anchor="middle" x="1290" y="-243.8" font-family="Times,serif" font-size="14.00" fill="#000000">HeaderComponent</text>
+</g>
+<!-- HeaderComponent&#45;&gt;SharedModule -->
+<g id="edge13" class="edge">
+<title>HeaderComponent&#45;&gt;SharedModule</title>
+<path fill="none" stroke="#000000" d="M1290,-229.7772C1290,-209.6348 1290,-180 1290,-180 1290,-180 910.5055,-180 910.5055,-180"/>
+<polygon fill="#000000" stroke="#000000" points="910.5056,-176.5001 900.5055,-180 910.5055,-183.5001 910.5056,-176.5001"/>
+</g>
+<!-- WelcomeComponent -->
+<g id="node16" class="node">
+<title>WelcomeComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="828.472,-122 693.528,-122 693.528,-86 828.472,-86 828.472,-122"/>
+<text text-anchor="middle" x="761" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">WelcomeComponent</text>
+</g>
+<!-- WelcomeComponent&#45;&gt;WelcomeModule -->
+<g id="edge16" class="edge">
+<title>WelcomeComponent&#45;&gt;WelcomeModule</title>
+<path fill="none" stroke="#000000" d="M738.5544,-122.0109C738.5544,-122.0109 738.5544,-151.855 738.5544,-151.855"/>
+<polygon fill="#000000" stroke="#000000" points="735.0544,-151.8549 738.5544,-161.855 742.0544,-151.855 735.0544,-151.8549"/>
+</g>
+</g>
+</svg>
+
+                </div>
+                <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
+                <div class="btn-group">
+                    <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+                    <button id="reset" class="btn btn-default btn-sm">Reset</button>
+                    <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+                </div>
+            </div>
+<div class="container-fluid overview">
+    <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-archive"></span></h4>
+                        <p class="card-text">
+                            <a href="./modules.html">7 modules</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-cogs"></span></h4>
+                        <p class="card-text">5 components</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-code-fork"></span></h4>
+                        <p class="card-text">2 injectables</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-info"></span></h4>
+                        <p class="card-text">1 interface</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<script src="js/libs/svg-pan-zoom.min.js"></script>
+<script src="js/svg-pan-zoom.controls.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+        <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'overview';
+            var COMPODOC_CURRENT_PAGE_URL = 'overview.html';
+        </script>
+
+       <script src="./js/search/search.js"></script>
+       <script src="./js/search/lunr.min.js"></script>
+       <script src="./js/search/search-lunr.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+       <script src="./js/search/search_index.js"></script>
+
+
+    </body>
+</html>

@@ -1,6 +1,6 @@
 # Marley
 
-* Version 0.7.3
+* Version 0.7.4
 
 * [Demo](https://marleyapp.herokuapp.com/)
 
@@ -11,7 +11,12 @@
 * [Node.js](https://nodejs.org/en/)
 * [express.js](https://expressjs.com/)
 * [Bulma](http://bulma.io/)
+* [Normalize.css](http://necolas.github.io/normalize.css/)
 * [Sass](http://sass-lang.com/)
+* [Jest](https://jestjs.io/)
+* [TestCaffe](https://devexpress.github.io/testcafe/)
+* [Conventional changelog](https://github.com/conventional-changelog/conventional-changelog)
+* [Compodoc](https://compodoc.app/)
 
 ## Project Setup
 1. Clone this repo.
@@ -27,6 +32,15 @@
 ### Build for SSR
 1. Run `yarn build:ssr` to build the project for production with server side rendering.
 2. Run `yarn start` for start server with server side.
+
+## Conventional changelog
+1. RUN `yarn conventional-changelog`.
+
+## Compodoc
+1. Run `yarn compodoc` or `yarn compodoc:serve` for serve in browser.
+
+## Code analyzer
+1. Run `yarn analyzer`.
 
 ## Code scaffolding
 1. Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
