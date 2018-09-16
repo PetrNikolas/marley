@@ -34,7 +34,7 @@
 2. Run `yarn start` for start server with server side.
 
 ## Conventional changelog
-1. RUN `yarn conventional-changelog`.
+1. Run `yarn conventional-changelog`.
 
 ## Compodoc
 1. Run `yarn compodoc` or `yarn compodoc:serve` for serve in browser.
