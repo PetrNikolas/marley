@@ -30,6 +30,7 @@
     "build:dev": "ng build",
     "build:prod": "ng build --prod",
     "serve": "ng serve",
+    "serve:proxy": "ng serve --proxy-config proxy.conf.json", 
     "start": "node dist/server.js"
   },
   "author": "Petr Nikolas",

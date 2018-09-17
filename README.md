@@ -26,6 +26,9 @@
 ### Development build and serve with live reload
 1. Run `yarn serve` to build the project for development and serve.
 
+#### Run with proxy
+1. Run `yarn serve:proxy` to build the project for development and serve with proxy config.
+
 ### Build for production
 1. Run `yarn build:prod` to build the project for production.
 
