@@ -7,6 +7,7 @@ import { PreloadingStrategy, Route } from "@angular/router";
 // ------------------------------------------------------------------------------
 // Import RxJS
 // ------------------------------------------------------------------------------
+// tslint:disable-next-line:import-blacklist
 import { Observable, of } from "rxjs";
 
 @Injectable()

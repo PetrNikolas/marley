@@ -4,7 +4,9 @@
     "outDir": "../out-tsc/app",
     "baseUrl": "./",
     "module": "es2015",
-    "types": [],
+    "types": [
+      "node"
+    ],
     "paths": {
       "@app/*": ["src/app/*"],
       "@core/*": ["src/app/core/*"],
@@ -16,5 +18,8 @@
     "test.ts",
     "**/*.spec.ts",
     "**/testing/*"
-  ]
+  ],
+  "angularCompilerOptions": {
+    //"enableIvy": true
+  }
 }

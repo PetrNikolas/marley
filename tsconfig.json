@@ -1,5 +1,13 @@
 {
   "compileOnSave": false,
+  "buildOnSave": false,
+  "include": [
+      "./src/**/*"
+  ],
+  "exclude": [
+      ".git",
+      "public"
+  ],
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -8,7 +16,17 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "baseUrl": "src",
     "skipLibCheck": true,
+    "removeComments": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitUseStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
     "typeRoots": [
       "node_modules/@types"
     ],

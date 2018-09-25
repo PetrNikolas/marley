@@ -11,7 +11,9 @@ export class GlobalErrorHandler implements ErrorHandler {
   handleError(error) {
     const message = error.message ? error.message : error.toString();
     const url = window.location.href;
+
     console.log("URL: " + url + "/ MESSAGE: " + message);
+
     throw error;
   }
 }

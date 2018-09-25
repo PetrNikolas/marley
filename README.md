@@ -1,6 +1,6 @@
 # Marley
 
-* Version 0.7.5
+* Version 0.7.6
 
 * [Demo](https://marleyapp.herokuapp.com/)
 

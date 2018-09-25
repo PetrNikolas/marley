@@ -6,13 +6,14 @@
     "module": "commonjs",
     "target": "es5",
     "types": [
-      "jasmine",
+      "jest",
       "node"
     ]
   },
   "files": [
     "test.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    "./src/jest-setup.ts"
   ],
   "include": [
     "**/*.spec.ts",
