@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/petrnikolasprokop/Documents/work/marley/marleyapp/src/app/app.component.spec.ts">
+  </file>
+  <file path="/Users/petrnikolasprokop/Documents/work/marley/marleyapp/src/app/features/contact/pages/contact.component.spec.ts">
+  </file>
+  <file path="/Users/petrnikolasprokop/Documents/work/marley/marleyapp/src/app/features/welcome/pages/welcome.component.spec.ts">
+  </file>
+  <file path="/Users/petrnikolasprokop/Documents/work/marley/marleyapp/src/app/shared/footer/footer.component.spec.ts">
+  </file>
+  <file path="/Users/petrnikolasprokop/Documents/work/marley/marleyapp/src/app/shared/header/header.component.spec.ts">
+  </file>
+</testExecutions>

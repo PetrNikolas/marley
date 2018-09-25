@@ -11,16 +11,15 @@
   "scripts": {
     "ng": "ng",
     "test": "jest --watch",
-    "lint": "tslint ./src/**/*.ts -t verbose",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:styles": "stylelint ./src/**/*.scss",
     "lint:ci": "yarn lint:styles && yarn lint",
     "conventional-changelog": "conventional-changelog",
-    "e2e": "ng e2e",
     "e2e:ci": "testcafe all e2e/**/*.e2e-spec.ts --app 'yarn start' --app-init-delay 5000",
     "test:ci": "jest --runInBand",
     "test:coverage": "rimraf coverage && jest --coverage",
     "analyzer": "ng build --prod --stats-json && webpack-bundle-analyzer dist/stats.json",
-    "prettier": "prettier {src,e2e}/*.ts --write && prettier {src,e2e}/**/*.ts --write",
+    "prettier": "prettier --config '. prettierrc.json' --write 'src/*.ts' --write 'src/**/*.ts'",
     "setup:project": "yarn install && yarn build:ssr && yarn start",
     "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -n \"Marley.js documentation\" -w -o --theme \"postmark\"",
     "compodoc:serve": "./node_modules/.bin/compodoc -p src/tsconfig.app.json -s -n \"Marley.js documentation\" -w -o --theme \"postmark\"",
@@ -38,9 +37,6 @@
     "{src,e2e}/**/*.{ts,tsx}": [
       "yarn lint:ci",
       "yarn prettier",
-      "yarn e2e",
-      "yarn e2e:ci",
-      "yarn test:ci",
       "git add"
     ]
   },

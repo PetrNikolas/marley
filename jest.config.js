@@ -1,4 +1,6 @@
 module.exports = {
+  verbose: true,
+  testURL: "http://localhost/",
   globals: {
     '__TS_CONFIG__': {
       'target': 'es5',
