@@ -110,8 +110,8 @@ var contact_component_1 = __webpack_require__(/*! ./features/contact/pages/conta
 var ɵ0 = { preload: true };
 exports.ɵ0 = ɵ0;
 var routes = [
-    { path: "", component: welcome_component_1.WelcomeComponent, pathMatch: "full" },
-    { path: "contact", component: contact_component_1.ContactComponent, data: ɵ0 }
+    { path: '', component: welcome_component_1.WelcomeComponent, pathMatch: 'full' },
+    { path: 'contact', component: contact_component_1.ContactComponent, data: ɵ0 },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -199,9 +199,7 @@ var AppModule = (function () {
         this.platformId = platformId;
         this.appId = appId;
         if (!environment_1.environment.production) {
-            var platform = common_1.isPlatformBrowser(platformId)
-                ? "in the browser"
-                : "on the server";
+            var platform = common_1.isPlatformBrowser(platformId) ? 'in the browser' : 'on the server';
             console.log("Running " + platform + " with appId=" + appId);
         }
     }
@@ -283,7 +281,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var CoreModule = (function () {
     function CoreModule(parentModule) {
         if (parentModule) {
-            throw new Error("CoreModule is already loaded. Import only in AppModule");
+            throw new Error('CoreModule is already loaded. Import only in AppModule');
         }
     }
     return CoreModule;
@@ -375,7 +373,7 @@ var ContactComponent = (function () {
                 nickname: '@johnsmith',
                 big_image: 'https://bulma.io/images/placeholders/1280x960.png',
                 small_image: 'https://bulma.io/images/placeholders/96x96.png',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.',
             },
             {
                 id: 2,
@@ -383,14 +381,14 @@ var ContactComponent = (function () {
                 nickname: '@johnsmith',
                 big_image: 'https://bulma.io/images/placeholders/1280x960.png',
                 small_image: 'https://bulma.io/images/placeholders/96x96.png',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.'
-            }
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.',
+            },
         ];
         this.modules = preloadStrategy.preloadedModules;
-        title.setTitle("Contact");
+        title.setTitle('Contact');
         meta.addTags([
-            { name: "author", content: "Petr Nikolas" },
-            { name: "description", content: "This is a contact page." }
+            { name: 'author', content: 'Petr Nikolas' },
+            { name: 'description', content: 'This is a contact page.' },
         ]);
     }
     ContactComponent.prototype.ngOnInit = function () { };
@@ -452,10 +450,10 @@ var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
 var platform_browser_1 = __webpack_require__(/*! @angular/platform-browser */ "@angular/platform-browser");
 var WelcomeComponent = (function () {
     function WelcomeComponent(meta, title) {
-        title.setTitle("Home");
+        title.setTitle('Home');
         meta.addTags([
-            { name: "author", content: "Petr Nikolas" },
-            { name: "description", content: "This is a home page." }
+            { name: 'author', content: 'Petr Nikolas' },
+            { name: 'description', content: 'This is a home page.' },
         ]);
     }
     WelcomeComponent.prototype.ngOnInit = function () { };
@@ -499,7 +497,7 @@ var GlobalErrorHandler = (function () {
     GlobalErrorHandler.prototype.handleError = function (error) {
         var message = error.message ? error.message : error.toString();
         var url = window.location.href;
-        console.log("URL: " + url + "/ MESSAGE: " + message);
+        console.log('URL: ' + url + '/ MESSAGE: ' + message);
         throw error;
     };
     return GlobalErrorHandler;
@@ -683,7 +681,7 @@ exports.SharedModule = SharedModule;
 
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.environment = {
-    production: false
+    production: false,
 };
 
 
