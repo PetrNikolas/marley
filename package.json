@@ -23,7 +23,7 @@
     "nx:help": "./node_modules/.bin/nx help",
     "update": "ng update @nrwl/schematics",
     "update:check": "ng update",
-    "stylelint": "stylelint ./apps/**/*.scss",
+    "stylelint": "stylelint \"apps/**/*.scss\" && stylelint \"libs/**/*.scss\"",
     "lint:ci": "npm run stylelint && npm run lint",
     "conventional-changelog": "conventional-changelog",
     "prettier": "prettier --config '. prettierrc.json' --write 'apps/*.ts' --write 'apps/**/*.ts'",
