@@ -4,15 +4,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 // ------------------------------------------------------------------------------
 // Import pages
 // ------------------------------------------------------------------------------
-import { WelcomeComponent } from './pages/welcome.component';
+import { ContactComponent } from './pages/contact.component';
 
 @NgModule({
-	imports: [CommonModule, FormsModule, HttpModule],
-	declarations: [WelcomeComponent],
+	imports: [CommonModule, FormsModule, HttpClientModule],
+	declarations: [ContactComponent],
+	providers: [],
 })
-export class WelcomeModule {}
+export class ContactModule {}

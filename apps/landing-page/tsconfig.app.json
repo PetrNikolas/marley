@@ -1,23 +1,20 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../out-tsc/app",
+    "outDir": "../../dist/out-tsc/apps/landing-page",
     "baseUrl": "./",
     "module": "es2015",
     "types": [
       "node"
-    ],
-    "paths": {
-      "@app/*": ["src/app/*"],
-      "@core/*": ["src/app/core/*"],
-      "@features/*": ["src/app/features/*"],
-      "@shared/*": ["src/app/shared/*"]
-    }
+    ]
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts",
     "**/testing/*"
+  ],
+  "include": [
+    "**/*.ts"
   ],
   "angularCompilerOptions": {
     //"enableIvy": true

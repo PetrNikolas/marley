@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc/apps/tuskdesk-admin-e2e",
+    "outDir": "../../dist/out-tsc/apps/landing-page-e2e",
     "module": "commonjs",
     "target": "es5",
     "types": [
