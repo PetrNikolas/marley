@@ -25,6 +25,7 @@
 * [Nx Workspace](https://nrwl.io/nx)
 * [Node.js](https://nodejs.org/en/)
 * [express.js](https://expressjs.com/)
+* [Nest.js](https://nestjs.com/)
 * [Bulma](http://bulma.io/)
 * [Normalize.css](http://necolas.github.io/normalize.css/)
 * [Sass](http://sass-lang.com/)

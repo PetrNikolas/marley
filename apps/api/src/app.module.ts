@@ -1,16 +1,19 @@
 // ------------------------------------------------------------------------------
 // Import Nest libs
 // ------------------------------------------------------------------------------
-import { NestFactory } from '@nestjs/core';
+import { Module } from '@nestjs/common';
 
 // ------------------------------------------------------------------------------
-// Import app module
+// Import controllers
 // ------------------------------------------------------------------------------
-import { AppModule } from './app.module';
+import { AppController } from './app.controller';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-  app.enableCors()
-  await app.listen(process.env.PORT || 3000);
-}
-bootstrap();
+@Module({
+  imports: [
+    
+  ],
+  controllers: [
+    AppController
+  ],
+})
+export class AppModule {}
