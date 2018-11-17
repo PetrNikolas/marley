@@ -18,7 +18,7 @@ gitInfo.version = version;
 // ------------------------------------------------------------------------------
 // Import file with versions
 // ------------------------------------------------------------------------------
-const file = resolve(__dirname, '.', 'src', 'environments', 'version.ts');
+const file = resolve(__dirname, '.', 'apps/landing-page/src', 'environments', 'version.ts');
 writeFileSync(file,
 `// IMPORTANT: THIS FILE IS AUTO GENERATED! DO NOT MANUALLY EDIT OR CHECKIN!
 /* tslint:disable */

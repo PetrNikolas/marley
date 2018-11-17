@@ -2,8 +2,6 @@
 
 * Modern Full-Stack !-> Angular 6+ and Node.js API <-! Starter Kit.
 
-* Version 0.8.0
-
 ## Prerequisites and Main Libraries
 * [Angular](https://angular.io/)
 * [Angular-cli](https://github.com/angular/angular-cli)
