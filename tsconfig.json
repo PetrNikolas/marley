@@ -16,8 +16,11 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@ui-shell": [
-        "libs/ui-shell/src/index.ts"
+      "@api": [
+        "apps/api"
+      ],
+      "@landing-page": [
+        "apps/landing-page"
       ],
       "@data": [
         "libs/data/src/index.ts"
