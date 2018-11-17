@@ -11,8 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 // ------------------------------------------------------------------------------
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { WelcomeModule } from './features/welcome/welcome.module';
-import { ContactModule } from './features/contact/contact.module';
+import { WelcomeModule } from './modules/welcome/welcome.module';
+import { ContactModule } from './modules/contact/contact.module';
 
 // ------------------------------------------------------------------------------
 // Import Routings

@@ -7,8 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 // ------------------------------------------------------------------------------
 // Import components/pages
 // ------------------------------------------------------------------------------
-import { WelcomeComponent } from './features/welcome/pages/welcome.component';
-import { ContactComponent } from './features/contact/pages/contact.component';
+import { WelcomeComponent } from './modules/welcome/pages/welcome.component';
+import { ContactComponent } from './modules/contact/pages/contact.component';
 
 // ------------------------------------------------------------------------------
 // Import custom preload strategy
