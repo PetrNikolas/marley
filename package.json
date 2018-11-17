@@ -27,7 +27,7 @@
     "lint:ci": "npm run stylelint && npm run lint",
     "prettier": "prettier --config '. prettierrc.json' --write 'apps/*.ts' --write 'apps/**/*.ts'",
     "build:dev": "ng build",
-    "build:prod": "ng build --prod && npm run version",
+    "build:prod": "npm run prettier && ng build --prod && npm run version",
     "serve": "ng serve",
     "serve:proxy": "ng serve --proxy-config proxy.conf.json",
     "version": "node version.js",
