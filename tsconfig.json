@@ -16,10 +16,10 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@myorg/ui-shell": [
+      "@ui-shell": [
         "libs/ui-shell/src/index.ts"
       ],
-      "@myorg/data": [
+      "@data": [
         "libs/data/src/index.ts"
       ]
     }
