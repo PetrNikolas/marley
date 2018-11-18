@@ -127,60 +127,6 @@
         }
       }
     },
-    "microservice": {
-      "root": "apps/microservice",
-      "sourceRoot": "apps/microservice/src",
-      "projectType": "application",
-      "prefix": "microservice",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@nrwl/builders:node-build",
-          "options": {
-            "outputPath": "dist/apps/microservice",
-            "main": "apps/microservice/src/main.ts",
-            "tsConfig": "apps/microservice/tsconfig.app.json"
-          },
-          "configurations": {
-            "production": {
-              "optimization": true,
-              "extractLicenses": true,
-              "fileReplacements": [
-                {
-                  "replace": "apps/microservice/src/environments/environment.ts",
-                  "with": "apps/microservice/src/environments/environment.prod.ts"
-                }
-              ]
-            }
-          }
-        },
-        "serve": {
-          "builder": "@nrwl/builders:node-execute",
-          "options": {
-            "buildTarget": "microservice:build"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "apps/microservice/tsconfig.app.json",
-              "apps/microservice/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/builders:jest",
-          "options": {
-            "jestConfig": "apps/microservice/jest.config.js",
-            "tsConfig": "apps/microservice/tsconfig.spec.json"
-          }
-        }
-      }
-    },
     "data": {
       "root": "libs/data",
       "sourceRoot": "libs/data/src",
