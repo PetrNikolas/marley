@@ -22,8 +22,14 @@
       "@landing-page": [
         "apps/landing-page"
       ],
+      "@admin": [
+        "apps/admin"
+      ],
       "@data": [
         "libs/data/src/index.ts"
+      ],
+      "@shell/ui-shell": [
+        "libs/ui-shell/src/index.ts"
       ]
     }
   },

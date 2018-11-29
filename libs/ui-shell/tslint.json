@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "marleyjs",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "marleyjs",
+      "kebab-case"
+    ]
+  }
+}
