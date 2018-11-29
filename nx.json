@@ -28,6 +28,12 @@
     },
     "data": {
       "tags": []
+    },
+    "admin": {
+      "tags": []
+    },
+    "admin-e2e": {
+      "tags": []
     }
   }
 }
