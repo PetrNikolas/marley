@@ -34,7 +34,7 @@
     "stylelint": "stylelint \"apps/**/*.scss\" --config ./.stylelintrc.yml && stylelint \"libs/**/*.scss\" --config ./.stylelintrc.yml",
     "htmlhint": "htmlhint \"apps/**/*.html\"",
     "lint:ci": "npm run stylelint && npm run htmlhint && npm run lint",
-    "prettier": "prettier --config '. prettierrc.json' --write 'apps/*.ts' --write 'apps/**/*.ts'",
+    "prettier": "prettier --config '.prettierrc.json' --write 'apps/*.ts' --write 'apps/**/*.ts'",
     "build:dev": "ng build",
     "build:prod": "npm run prettier && ng build --prod",
     "serve": "ng serve",
@@ -44,9 +44,21 @@
   },
   "private": true,
   "lint-staged": {
+    "{apps,libs}/**/*.{scss}": [
+      "npm run stylelint",
+      "git add"
+    ],
+    "{apps,libs}/**/*.{html}": [
+      "npm run htmlhint",
+      "git add"
+    ],
     "{apps,libs}/**/*.{ts,json,md,scss}": [
       "npm run affected:lint  -- --uncommitted --fix --parallel",
       "npm run format:write -- --uncommitted",
+      "git add"
+    ],
+    "{apps,libs}/**/*.{ts,scss}": [
+      "npm run prettier",
       "git add"
     ]
   },

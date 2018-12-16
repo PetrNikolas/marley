@@ -5,14 +5,9 @@ import { AppComponent } from './app.component';
 import { NxModule } from '@nrwl/nx';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NxModule.forRoot()
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent],
+	imports: [BrowserModule, NxModule.forRoot()],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

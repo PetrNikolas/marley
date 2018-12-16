@@ -14,7 +14,7 @@ import { NxModule } from '@nrwl/nx';
 // ------------------------------------------------------------------------------
 // Import libs
 // ------------------------------------------------------------------------------
-import { UiShellModule } from "@shell/ui-shell";
+import { UiShellModule } from '@shell/ui-shell';
 
 // ------------------------------------------------------------------------------
 // Import environments
@@ -22,19 +22,13 @@ import { UiShellModule } from "@shell/ui-shell";
 import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    NxModule.forRoot(),
-    UiShellModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [AppComponent],
+	imports: [BrowserModule, NxModule.forRoot(), UiShellModule],
+	providers: [],
+	bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, @Inject(APP_ID) private appId: string) {
+	constructor(@Inject(PLATFORM_ID) private platformId: Object, @Inject(APP_ID) private appId: string) {
 		if (!environment.production) {
 			const platform = isPlatformBrowser(platformId) ? 'in the browser' : 'on the server';
 			console.log(`Running ${platform} with appId=${appId}`);
