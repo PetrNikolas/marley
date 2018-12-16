@@ -8,22 +8,13 @@
     "nx.json": "*"
   },
   "projects": {
-    "tuskdesk": {
+    "landing-page": {
       "tags": []
     },
-    "tuskdesk-e2e": {
-      "tags": []
-    },
-    "tuskdesk-admin": {
-      "tags": []
-    },
-    "tuskdesk-admin-e2e": {
+    "landing-page-e2e": {
       "tags": []
     },
     "ui-shell": {
-      "tags": []
-    },
-    "api": {
       "tags": []
     },
     "data": {
