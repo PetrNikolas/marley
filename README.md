@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-* [Prerequisites and Main Libraries](#main-libraries)
+* [Prerequisites and Main Libraries](#libraries)
 * [Project Setup](#project-setup)
 * [Creating an Application](#creating-an-application)
 * [Creating a Library](#creating-a-library)
@@ -20,7 +20,7 @@
 * [Affected Apps](#affected-apps)
 * [Gitlab CI](#gitlab-ci)
 
-## Main Libraries
+## Libraries
 
 * [Angular](https://angular.io/)
 * [Angular-cli](https://github.com/angular/angular-cli)
