@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'marleyjs-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

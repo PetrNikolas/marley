@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-shell',
+  selector: 'marleyjs-shell',
   template: `    
     <h1>{{ title }}</h1>
     <div>
