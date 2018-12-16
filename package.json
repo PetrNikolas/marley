@@ -1,6 +1,6 @@
 {
   "name": "marleyjs",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "scripts": {
     "api:start": "ts-node -r tsconfig-paths/register apps/api/src/main.ts",
     "api:start:dev": "nodemon",

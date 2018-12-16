@@ -4,6 +4,7 @@
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) using [Nrwl Nx](https://nrwl.io/nx).
 
 ## Table of Contents
+
 * [Prerequisites and Main Libraries](#prerequisites-and-main-libraries)
 * [Project Setup](#project-setup)
 * [Creating an Application](#creating-an-application)
@@ -20,6 +21,7 @@
 * [Gitlab CI](#gitlab-ci)
 
 ## Prerequisites and Main Libraries
+
 * [Angular](https://angular.io/)
 * [Angular-cli](https://github.com/angular/angular-cli)
 * [Nx Workspace](https://nrwl.io/nx)
@@ -33,30 +35,31 @@
 * [TestCaffe](https://devexpress.github.io/testcafe/)
 
 ## Project Setup
+
 1. Clone this repo.
 2. Run `npm install` to install dependencies.
 
-### Creating an Application: 
+### Creating an Application
 
 [Create App](https://github.com/nrwl/nx-examples/tree/app): creates the first empty application named school with a routing option.
 
-```
+```sh
 ng generate app school --routing
 ```
 
-This will configure the root NgModule to wire up routing, as well as add a <router-outlet> to the AppComponent template to help get us started.
+This will configure the root NgModule to wire up routing, as well as add a `<router-outlet>` to the AppComponent template to help get us started.
 
-### Creating a Library: 
+### Creating a Library
 
 [Create Lib](https://github.com/nrwl/nx-examples/tree/lib)
-Adding new libs to an Nx Workspace is done by using the AngularCLI generate command, just like adding a new app. 
+Adding new libs to an Nx Workspace is done by using the AngularCLI generate command, just like adding a new app.
 Nx has a schematic named lib that can be used to add a new Angular module lib to our workspace:
 
-```
+```sh
 ng generate lib ar
 ```
 
-This library currently exists as an empty module and not added to be used in any other module. 
+This library currently exists as an empty module and not added to be used in any other module.
 The library name is registered in .angular-cli.json file. If you need to delete it for any reason, remember to remove it from the .angular-cli.json apps list as well.
 
 [Create Lib with Routing](https://github.com/nrwl/nx-examples/tree/ui-lib): generates a library with routing and adds the routes to the app module.
@@ -74,7 +77,8 @@ ng generate lib ui --directory=school
 ```
 
 We can create an Angular module lib with routing and have it added as a child to routing in one of our apps:
-```
+
+```sh
 ng generate lib school-ui --routing --parentModule=apps/school/src/app/app.module.ts
 ```
 
@@ -82,11 +86,10 @@ ng generate lib school-ui --routing --parentModule=apps/school/src/app/app.modul
 
 And we can create an Angular module lib with routing that we want to have lazy loaded:
 
-```
+```sh
 ng generate lib slides --routing --lazy --parentModule=apps/school/src/app/app.module.ts
-```
-We just created a new library with a module and added it as a route to the main school application. 
-```
+
+We just created a new library with a module and added it as a route to the main school application.
  RouterModule.forRoot(
       [
         ...,
@@ -94,7 +97,7 @@ We just created a new library with a module and added it as a route to the main 
       ]
 ```
 
-### Creating Libraries with Tags: 
+### Creating Libraries with Tags
 
 A large workspace contains a lot of apps and libs. Because it is so easy to share code, create new libs and depend on libs, the dependencies between the apps and libs can quickly get out of hand.
 
@@ -102,7 +105,7 @@ We need a way to impose constraints on the dependency graph.
 
 When creating an app or a lib, you can tag them:
 
-```
+```sh
 ng g lib apilib --tags=api
 ng g lib utilslib --tags=utils
 ng g lib impllib --tags=impl
@@ -113,7 +116,7 @@ ng g lib untagged
 
 You can then define a constraint in tslint.json, like this:
 
-```
+```sh
 {
  ...
  "nx-enforce-module-boundaries": [
@@ -128,7 +131,7 @@ You can then define a constraint in tslint.json, like this:
       }
     ]
 }
-```
+
 With this configuration in place:
 
   * utilslib cannot depend on apilib or impllib
@@ -137,18 +140,19 @@ With this configuration in place:
   * untagged lib cannot depend on anything
   * You can also use wildcards, like this:
 
-```
+
 { "sourceTag": "impl", "onlyDependOnLibsWithTags": ["*"] } // impl can depend on anything
 ```
 
-```
+```sh
 { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] } // anything can depend on anything
 ```
+
 The system goes through the constrains until it finds the first one matching the source file it's analyzing.
 
 If we change the configuration to the following:
 
-```
+```sh
  "nx-enforce-module-boundaries": [
       true,
       {
@@ -161,16 +165,16 @@ If we change the configuration to the following:
         ]
       }
     ]
- ```
- 
- the following will be true:
- 
-  * utilslib cannot depend on apilib or impllib
-  * apilib can depend on utilslib
-  * implib can depend on both utilslib and apilib
-  * untagged lib can depend on anything
+```
+
+the following will be true:
+
+* utilslib cannot depend on apilib or impllib
+* apilib can depend on utilslib
+* implib can depend on both utilslib and apilib
+* untagged lib can depend on anything
   
-### Creating Components:
+### Creating Components
 
 To generate a component/directive/service/module... in a specific app or library you can use --project:
 
@@ -191,19 +195,17 @@ Profile component folder will be created under shared-ui/src/toolbar/profile dir
 
 Note that if you want to use profile directive in an app, you need to also add ProfileComponent to exports list on toolbar.module.ts
 
-### Ngrx Store Generation: 
+### Ngrx Store Generation
 
-[Ngrx](https://github.com/nrwl/nx-examples/tree/ngrx): 
-# ngrx
---------
+[Ngrx](https://github.com/nrwl/nx-examples/tree/ngrx):
 
-## Overview
+#### Overview
 
-Generates a ngrx feature set containing an `init`, `interfaces`, `actions`, `reducer` and `effects` files. 
+Generates a ngrx feature set containing an `init`, `interfaces`, `actions`, `reducer` and `effects` files.
 
 You use this schematic to build out a new ngrx feature area that provides a new piece of state.
 
-## Command
+#### Command
 
 ```sh
 ng generate ngrx FeatureName [options]
@@ -211,28 +213,28 @@ ng generate ngrx FeatureName [options]
 ng generate ngrx app --module=apps/school/src/app/app.module.ts
 ```
 
-### Options
+##### Options
 
 Specifies the name of the ngrx feature (e.g., Products, User, etc.)
 
-- `name`
-  - Type: `string`
-  - Required: true
+* `name`
+* Type: `string`
+* Required: true
 
-Path to Angular Module. Also used to determine the parent directory for the new **+state** 
+Path to Angular Module. Also used to determine the parent directory for the new **+state**
 directory; unless the `--directory` option is used to override the dir name.
 
->  e.g. --module=apps/myapp/src/app/app.module.ts
+> e.g. --module=apps/myapp/src/app/app.module.ts
 
-- `--module`
-  - Type: `string`
-  - Required: true
+* `--module`
+* Type: `string`
+* Required: true
 
 Specifies the directory name used to nest the **ngrx** files within a folder.
 
-- `--directory`
-  - Type: `string`
-  - Default: `+state`
+* `--directory`
+* Type: `string`
+* Default: `+state`
 
 #### Examples
 
@@ -255,16 +257,16 @@ The files generated are shown below and include placeholders for the *feature* n
 
 > The &lt;Feature&gt; notation used below indicates a placeholder for the actual *feature* name.
 
-*  [&lt;feature&gt;.actions.ts](#featureactionsts)
-*  [&lt;feature&gt;.reducer.ts](#featurereducerts)
-*  [&lt;feature&gt;.effects.ts](#featureeffectsts)
-*  [&lt;feature&gt;.selectors.ts](#featureselectorsts)
-*  [&lt;feature&gt;.facade.ts](#featurefacadests)
+* [&lt;feature&gt;.actions.ts](#featureactionsts)
+* [&lt;feature&gt;.reducer.ts](#featurereducerts)
+* [&lt;feature&gt;.effects.ts](#featureeffectsts)
+* [&lt;feature&gt;.selectors.ts](#featureselectorsts)
+* [&lt;feature&gt;.facade.ts](#featurefacadests)
 
-*  [../app.module.ts](#appmodulets)
+* [../app.module.ts](#appmodulets)
   
-#### &lt;feature&gt;.actions.ts
-  
+### &lt;feature&gt;.actions.ts
+
 ```ts
 import {Action} from "@ngrx/store";
 
@@ -291,7 +293,8 @@ export class DataLoaded implements Action {
 export type <Feature>Actions = <Feature> | Load<Feature> | <Feature>Loaded;
 ```
 
-#### &lt;feature&gt;.reducer.ts
+### &lt;feature&gt;.reducer.ts
+
 ```ts
 import { <Feature> } from './<feature>.interfaces';
 import { <Feature>Action, <Feature>ActionTypes } from './<feature>.actions';
@@ -327,7 +330,8 @@ export function <feature>Reducer(state: <Feature>Data = initialState, action: <F
 }
 ```
 
-#### &lt;feature&gt;.effects.ts
+### &lt;feature&gt;.effects.ts
+
 ```ts
 import { Injectable } from '@angular/core';
 import { Effect, Actions } from '@ngrx/effects';
@@ -349,12 +353,13 @@ export class <Feature>Effects {
  });
 
  constructor(
-   private actions: Actions, 
+   private actions: Actions,
    private dataPersistence: DataPersistence<Feature>) { }
 }
 ```
 
-#### ../app.module.ts
+### ../app.module.ts
+
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -392,27 +397,28 @@ export class AppModule {
 
 ```
 
-# Updating Nx:
+## Updating Nx
 
-[Nx Update](https://github.com/nrwl/nx-examples/tree/nx-migrate): 
+[Nx Update](https://github.com/nrwl/nx-examples/tree/nx-migrate):
 
 You can check for the updates (nx version > 0.8.0).
 
-```
+```sh
 yarn update:check
 ```
 
 You can migrate to the newest nx-module by updating nx on package.json and running yarn update.
 
-```
+```sh
 yarn update
 ```
 
-### Development server: 
+### Development server
 
 Run `ng serve --project=myapp` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 #### Run with proxy
+
 1. Run `npm run serve:proxy` to build the project for development and serve with proxy config.
 
 ## Code scaffolding
@@ -473,4 +479,5 @@ npm run format:check -- --files="libs/mylib/index.ts,libs/mylib2/index.ts"
 ```
 
 ## Gitlab CI
+
 * In `.ci` folder are two prepared files for Heroku and AWS deploy. You can choose one of these.
