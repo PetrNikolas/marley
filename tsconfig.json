@@ -1,40 +1,21 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "baseUrl": "src",
     "paths": {
-      "@api": [
-        "apps/api"
-      ],
-      "@landing-page": [
-        "apps/landing-page"
-      ],
-      "@admin": [
-        "apps/admin"
-      ],
-      "@data": [
-        "libs/data/src/index.ts"
-      ],
-      "@shell/ui-shell": [
-        "libs/ui-shell/src/index.ts"
-      ]
+      "@app/*": ["app/*"],
+      "@env/*": ["environments/*"]
     }
-  },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  }
 }

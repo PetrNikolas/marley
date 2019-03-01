@@ -1,42 +1,39 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "",
+  "newProjectRoot": "projects",
   "projects": {
-    "landing-page": {
-      "root": "apps/landing-page/",
-      "sourceRoot": "apps/landing-page/src",
+    "ng-x-rocket": {
+      "root": "",
+      "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "marleyjs",
-      "schematics": {},
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/landing-page",
-            "index": "apps/landing-page/src/index.html",
-            "main": "apps/landing-page/src/main.ts",
-            "polyfills": "apps/landing-page/src/polyfills.ts",
-            "tsConfig": "apps/landing-page/tsconfig.app.json",
+            "outputPath": "dist",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "src/tsconfig.app.json",
+            "polyfills": "src/polyfills.ts",
             "assets": [
-              "apps/landing-page/src/favicon.ico",
-              "apps/landing-page/src/assets"
+              "src/favicon.ico",
+              "src/apple-touch-icon.png",
+              "src/robots.txt",
+              "src/manifest.json",
+              "src/assets"
             ],
-            "styles": [
-              "./node_modules/normalize.css/normalize.css",
-              "./node_modules/bulma/css/bulma.css",
-              "apps/landing-page/src/styles.scss"
-            ],
+            "styles": ["src/main.scss"],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/landing-page/src/environments/environment.ts",
-                  "with": "apps/landing-page/src/environments/environment.prod.ts"
-                }
-              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -45,389 +42,81 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "landing-page:build",
-            "proxyConfig": "proxy.conf.json"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "landing-page:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "landing-page:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "apps/landing-page/src/test.ts",
-            "polyfills": "apps/landing-page/src/polyfills.ts",
-            "tsConfig": "apps/landing-page/tsconfig.spec.json",
-            "karmaConfig": "apps/landing-page/karma.conf.js",
-            "styles": [
-              "./node_modules/normalize.css/normalize.css",
-              "./node_modules/bulma/css/bulma.css",
-              "apps/landing-page/src/styles.scss"
-            ],
-            "scripts": [],
-            "assets": [
-              "apps/landing-page/src/favicon.ico",
-              "apps/landing-page/src/assets"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "apps/landing-page/tsconfig.app.json",
-              "apps/landing-page/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "landing-page-e2e": {
-      "root": "apps/landing-page-e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "apps/landing-page-e2e/protractor.conf.js",
-            "devServerTarget": "landing-page:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "landing-page:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "apps/landing-page-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "data": {
-      "root": "libs/data",
-      "sourceRoot": "libs/data/src",
-      "projectType": "library",
-      "prefix": "marleyjs",
-      "architect": {
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "libs/data/src/test.ts",
-            "tsConfig": "libs/data/tsconfig.spec.json",
-            "karmaConfig": "libs/data/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/data/tsconfig.lib.json",
-              "libs/data/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "admin": {
-      "root": "apps/admin/",
-      "sourceRoot": "apps/admin/src",
-      "projectType": "application",
-      "prefix": "marleyjs",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/apps/admin",
-            "index": "apps/admin/src/index.html",
-            "main": "apps/admin/src/main.ts",
-            "polyfills": "apps/admin/src/polyfills.ts",
-            "tsConfig": "apps/admin/tsconfig.app.json",
-            "assets": [
-              "apps/admin/src/favicon.ico",
-              "apps/admin/src/assets"
-            ],
-            "styles": [
-              "apps/admin/src/styles.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
+              "buildOptimizer": true,
+              "serviceWorker": true,
               "fileReplacements": [
                 {
-                  "replace": "apps/admin/src/environments/environment.ts",
-                  "with": "apps/admin/src/environments/environment.prod.ts"
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "admin:build"
+            "browserTarget": "ng-x-rocket:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "admin:build:production"
+              "browserTarget": "ng-x-rocket:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "admin:build"
+            "browserTarget": "ng-x-rocket:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "apps/admin/src/test.ts",
-            "polyfills": "apps/admin/src/polyfills.ts",
-            "tsConfig": "apps/admin/tsconfig.spec.json",
-            "karmaConfig": "apps/admin/karma.conf.js",
-            "styles": [
-              "apps/admin/src/styles.scss"
-            ],
+            "main": "src/test.ts",
+            "karmaConfig": "src/karma.conf.js",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
+            "styles": ["src/main.scss"],
             "assets": [
-              "apps/admin/src/favicon.ico",
-              "apps/admin/src/assets"
+              "src/favicon.ico",
+              "src/apple-touch-icon.png",
+              "src/robots.txt",
+              "src/manifest.json",
+              "src/assets"
             ]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/admin/tsconfig.app.json",
-              "apps/admin/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     },
-    "admin-e2e": {
-      "root": "apps/admin-e2e/",
+    "ng-x-rocket-e2e": {
+      "root": "e2e",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "apps/admin-e2e/protractor.conf.js",
-            "devServerTarget": "admin:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "admin:serve:production"
-            }
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "ng-x-rocket:serve"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "apps/admin-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "ui-shell": {
-      "root": "libs/ui-shell",
-      "sourceRoot": "libs/ui-shell/src",
-      "projectType": "library",
-      "prefix": "marleyjs",
-      "architect": {
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "libs/ui-shell/src/test.ts",
-            "tsConfig": "libs/ui-shell/tsconfig.spec.json",
-            "karmaConfig": "libs/ui-shell/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/ui-shell/tsconfig.lib.json",
-              "libs/ui-shell/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "dashboard": {
-      "root": "apps/dashboard/",
-      "sourceRoot": "apps/dashboard/src",
-      "projectType": "application",
-      "prefix": "marleyjs",
-      "schematics": {},
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/apps/dashboard",
-            "index": "apps/dashboard/src/index.html",
-            "main": "apps/dashboard/src/main.ts",
-            "polyfills": "apps/dashboard/src/polyfills.ts",
-            "tsConfig": "apps/dashboard/tsconfig.app.json",
-            "assets": [
-              "apps/dashboard/src/favicon.ico",
-              "apps/dashboard/src/assets"
-            ],
-            "styles": [
-              "apps/dashboard/src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "apps/dashboard/src/environments/environment.ts",
-                  "with": "apps/dashboard/src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
-            }
-          }
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "browserTarget": "dashboard:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "dashboard:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "dashboard:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "apps/dashboard/src/test.ts",
-            "polyfills": "apps/dashboard/src/polyfills.ts",
-            "tsConfig": "apps/dashboard/tsconfig.spec.json",
-            "karmaConfig": "apps/dashboard/karma.conf.js",
-            "styles": [
-              "apps/dashboard/src/styles.css"
-            ],
-            "scripts": [],
-            "assets": [
-              "apps/dashboard/src/favicon.ico",
-              "apps/dashboard/src/assets"
-            ]
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "apps/dashboard/tsconfig.app.json",
-              "apps/dashboard/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "dashboard-e2e": {
-      "root": "apps/dashboard-e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "apps/dashboard-e2e/protractor.conf.js",
-            "devServerTarget": "dashboard:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "dashboard:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "apps/dashboard-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
     }
   },
-  "cli": {
-    "warnings": {
-      "typescriptMismatch": false,
-      "versionMismatch": false
-    },
-    "defaultCollection": "@nrwl/schematics"
-  },
-  "defaultProject": "landing-page"
+  "defaultProject": "ng-x-rocket"
 }

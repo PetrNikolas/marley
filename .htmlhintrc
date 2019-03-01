@@ -1,7 +1,7 @@
 {
   "tagname-lowercase": false,
   "attr-lowercase": false,
-  "attr-value-double-quotes": false,
+  "attr-value-double-quotes": true,
   "tag-pair": true,
   "spec-char-escape": true,
   "id-unique": true,
