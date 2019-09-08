@@ -1,6 +1,6 @@
 # Marley
 
-- Modern Full-Stack !-> Angular 7+ and Node.js API <-! Starter Kit.
+- Modern Angular 7+ Starter Kit.
 - This project was generated with [Angular CLI](https://github.com/angular/angular-cli) and [ngX-Rocket](https://github.com/ngx-rocket/starter-kit).
 
 ## Table of Contents
@@ -61,15 +61,15 @@
 ## Project Setup
 
 1. Clone this repo.
-2. Run `npm install` to install dependencies.
+2. Run `yarn install` to install dependencies.
 
 ### Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `yarn serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 #### Run with proxy
 
-1. Run `npm run start:proxy` to build the project for development and serve with proxy config.
+1. Run `yarn start:proxy` to build the project for development and serve with proxy config.
 
 ## Code scaffolding
 
@@ -77,17 +77,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `yarn build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 To build only the changed files since the last build run:
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `yarn test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `yarn e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Gitlab CI
